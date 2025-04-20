@@ -1,1333 +1,297 @@
-@charset "utf-8";
-html {
-font-size:100%;
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reich Family</title>
+
+<!--CSS Referrals-->
+<link href="layout.css" rel="stylesheet" type="text/css">
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicon.ico">
+
+<!--Favicon-->
+<link rel="shortcut icon" href="favicon.ico">
+
+<!--Preload Top Images-->
+<link rel="preload" as="image" href="images/motherdaughterfielda.jpg">
+<link rel="preload" as="image" href="images/motherdaughterfieldb.jpg">
+<link rel="preload" as="image" href="images/motherdaughterfieldc.jpg">
+<link rel="preload" as="image" href="images/motherdaughterfieldd.jpg">
+<link rel="preload" as="image" href="images/motherdaughterfielde.jpg">
+<link rel="preload" as="image" href="images/motherdaughterfieldf.jpg">
+<link rel="preload" as="image" href="images/motherdaughterfieldg.jpg">
+<link rel="preload" as="image" href="images/motherdaughterfieldh.jpg">
+<link rel="preload" as="image" href="images/motherdaughterfieldSquarea.jpg">
+<link rel="preload" as="image" href="images/motherdaughterfieldSquareb.jpg">
+<link rel="preload" as="image" href="images/motherdaughterfieldSquarec.jpg">
+<link rel="preload" as="image" href="images/motherdaughterfieldSquared.jpg">
+<link rel="preload" as="image" href="images/motherdaughterfieldSquaree.jpg">
+<link rel="preload" as="image" href="images/motherdaughterfieldSquaref.jpg">
+<link rel="preload" as="image" href="images/motherdaughterfieldSquareg.jpg">
+<link rel="preload" as="image" href="images/motherdaughterfieldSquareh.jpg">
+
+<!--Fonts-->
+<link rel="preload" href="fonts/OpenSans-Light.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="fonts/ITCEDSCR.TTF" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="fonts/VIVALDII.TTF" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="fonts/TrajanPro3-Regular.otf" as="font" type="font/otf" crossorigin>
+<link rel="preload" href="fonts/Montserrat-Thin.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="fonts/Montserrat-ThinItalic.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="fonts/Montserrat-ExtraLightItalic.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="fonts/Cinzel-Regular.ttf" as="font" type="font/ttf" crossorigin>
+
+<!--Twitter Preview-->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+<meta name="twitter:creator" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="We are the chosen elite of Reich whose name we take as our own.">
+<meta name="twitter:image" content="https://reich.tf/images/reichfamilysocial.png">
+
+<!--Site Facebook Preview-->
+<meta property="og:title" content="The Reich Family">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://reich.cf">
+<meta property="og:description" content="We are the chosen elite of Reich whose name we take as our own.">
+<meta property="og:image" content="https://reich.tf/images/reichfamilysocial.png">
+
+<meta name="google-site-verification" content="">
+<meta name="Author" content="The Reich Family">
+<meta name="Keywords" content="Reich Family, we are not a cult, religious group, religion, God, Gods, youth, teens, children, school, education, community, we are not a sect, leader, anointed Father, His Eminence,">
+<meta name="Description" content="We are the chosen elite of Reich, our anointed leader, whose name we take as our own. We rely upon the divine guidance of His Eminence. Our family embraces a common cause and the belief that members of our privileged group possess a divine power within us that is the result of the intellectual and spiritual enlightenment instilled in us by our anointed Father.">
+
+<style>
+
+@font-face {
+  font-family:ITCEDSCR;
+  src: url(fonts/ITCEDSCR.TTF);
+  font-display: block;
 }
-img, object, embed, video {
-max-width: 100%;
+@font-face {
+  font-family:VIVALDII;
+  src: url(fonts/VIVALDII.TTF);
+  font-display: block;
 }
-.ie6 img {
-width:100%;
+@font-face {
+  font-family:TrajanPro3-Regular;
+  src: url(fonts/TrajanPro3-Regular.otf);
+  font-display: block;
 }
-@-moz-document url-prefix() { /* Disable scrollbar Firefox */
-html {
-scrollbar-width: none;
+@font-face {
+  font-family:Cinzel-Regular;
+  src: url(fonts/Cinzel-Regular.ttf);
+  font-display: block;
 }
+@font-face {
+  font-family:OpenSans-Light;
+  src: url(fonts/OpenSans-Light.ttf);
+  font-display: block;
 }
-body::-webkit-scrollbar {
-width: 0px;
-background: transparent; /* Disable scrollbar Chrome/Safari/Webkit */
+@font-face {
+  font-family:Montserrat-Light;
+  src: url(fonts/Montserrat-Light.ttf);
+  font-display: block;
+}
+@font-face {
+  font-family:Montserrat-Thin;
+  src: url(fonts/Montserrat-Thin.ttf);
+  font-display: block;
+}
+@font-face {
+  font-family:Montserrat-ThinItalic;
+  src: url(fonts/Montserrat-ThinItalic.ttf);
+  font-display: block;
+}
+@font-face {
+  font-family:Montserrat-ExtraLight;
+  src: url(fonts/Montserrat-ExtraLight.ttf);
+  font-display: block;
+}
+@font-face {
+  font-family:Montserrat-ExtraLightItalic;
+  src: url(fonts/Montserrat-ExtraLightItalic.ttf);
+  font-display: block;
+}
+@font-face {
+  font-family:PinyonScript-Regular;
+  src: url(fonts/PinyonScript-Regular.ttf);
+  font-display: block;
 }
 
-body {
-background-color:#000000;
-color:#FFFFFF;
-text-decoration:none;
+.no-right-click {
+    pointer-events: none;
 }
 
-/* Mobile Layout: 609px and below. */
+<!--Wrap with div and .container and place anything
+over div with the options below .container-->
 
-.desktopdisplay {
-display:none;
-}
-.tabletdisplay {
-display:none;
-}
-.mobiledisplay {
-display:block;
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
-/* Responsive flex one column-layout instead of two-column layout */
-.flex-container {
-flex-direction: column;
-display: flex;
-/*Don't change padding below to margin.
-Affects Polly Klaas Lead*/
-padding:8px;
-gap:8px;
-border:1px solid #555;
-border-radius:12px;
-margin:auto;
-}
-.title {
-padding:0px 0px 5px;
-}
-.header {
-text-align:center;
-margin:6px auto 15px;
-line-height:1;
-}
-.reichheader {
-display:flex;
-margin: 3px 0px 9px;
-justify-content:space-between;
-align-items:center;
-}
-.reichcftitle {
-font-family:TrajanPro3-Regular;
-color:#EFEFEF;
-font-size:1.4rem;
-text-align:center;
-margin:0px auto 0px;
-}
-.reichcfsubtitle {
-font-family:Montserrat-ThinItalic;
-font-size:0.8rem;
-text-align:center;
-margin:-6px auto 0px;
-}
-.reichheaderfamily {
-display:flex;
-margin: 0px 0px 0px;
-justify-content:space-between;
-align-items:center;
-line-height:1;
-}
-.titlecorners {
-max-width:60px;
-margin:-5px -5px 5px;
-opacity:1.0;
-}
-.reichcftitlefamily {
-font-family:ITCEDSCR;
-color:#FFFFFF;
-font-size:1.9rem;
-text-align:center;
-margin:-4px auto 0px;
-}
-.reichcfsubtitlefamily {
-font-family:Montserrat-ThinItalic;
-color:#FFFFFF;
-font-size:0.80rem;
-text-align:center;
-margin:2px auto 9px;
-}
-.reichfooterimg {
-display:block;
-max-width:170px;
-margin:35px auto 0px;
-}
-.footertitle {
-font-family:TrajanPro3-Regular;
-color:#FFFFFF;
-font-size:1.4rem;
-text-align:center;
-margin-bottom:-4px;
-}
-.footertitlefamily {
-font-family:ITCEDSCR;
-color:#FFFFFF;
-font-size:1.8rem;
-text-align:center;
-margin-bottom:-4px;
-}
-.footeremail {
-font-family:Montserrat-ThinItalic;
-color:#FFFFFF;
-font-size:0.86rem;
-font-weight:bold;
-text-align:center;
-margin:4px auto auto;
-}
-.footercopyright {
-font-family:Montserrat-ThinItalic;
-color:#FFFFFF;
-font-size:0.80rem;
-text-align:center;
-margin:8px auto auto;
-}
-footer {
-margin-top:auto;
-margin-bottom:30px;
-}
-.bottomhr {
-margin:auto auto auto;
-border:1px solid #555;
-border-width:0px 0px 1px 0px;
-}
-.summary {
-font-size:0.92rem;
-line-height:2.0;
-display:block;
-border:none;
-padding:15px 0px 15px;
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-margin:30px auto 30px;
-}
-.summaryfacade {
-font-size:0.92rem;
-line-height:2.0;
-padding:15px 0px 15px;
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-margin:0px auto -10px;
-}
-.summaryfacadeborderless {
-font-size:0.94rem;
-line-height:1.8;
-margin:0px auto -10px;
-}
-.headings {
-font-family:Cinzel-Regular;
-font-size:22px;
-text-align:center;
-}
-.photolayout {
-display:flex;
-flex-wrap:wrap;
-border:1px solid #555;
-border-radius:6px;
-background-position:center;
-background-size:cover;
-}
-.border-radius-top-left {
-border-radius:6px 0px 0px 0px;
-}
-.border-radius-top-right {
-border-radius:0px 6px 0px 0px;
-}
-.border-radius-bottom-left {
-border-radius:0px 0px 0px 6px;
-}
-.border-radius-bottom-right {
-border-radius:0px 0px 6px 0px;
-}
-.floralpagedivider {
-max-width:160px;
-display:block;
-margin-left:auto;
-margin-right:auto;
-}
-.trajan {
-font-family:TrajanPro3-Regular;
-font-size:20px;
-}
-.cinzel {
-font-family:Cinzel-Regular;
-font-size:15px;
-margin-top:-4px;
-}
-.vivaldi {
-font-family:VIVALDII;
-font-size:19px;
-margin-top:-4px;
-}
-.edwardian {
-font-family:ITCEDSCR;
-font-size:36px;
-}
-.Montserrat-ThinItalic {
-font-family:Montserrat-ThinItalic;
-font-size:1.0rem;
-}
-.Montserrat-ExtraLightItalic {
-font-family:Montserrat-ExtraLightItalic;
-font-size: 17px;
-line-height:1.5;
-}
-.cinzeloutlined {
-font-family:Cinzel-Regular;
-font-size:15px;
-margin:-4px auto 0px;
-padding:8px;
-}
-.vivaldioutlined {
-font-family:VIVALDII;
-font-size:19px;
-margin:-4px auto 0px;
-padding:8px;
-}
-.content {
-display: block;
-padding: 10px;
-}
-.bodytypography {
-font-family:OpenSans-Light;
-font-size:1.0rem;
-color:#FFFFFF;
-line-height:1.9;
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
 }
 
-<--footer element must be set
-to margin-stop:auto -->
-
-.footeralwaysbottom {
-min-height: 100vh;
-display:flex;
-flex-direction:column;
-margin-bottom:10px;
-}
-.border {
-min-height: 97.3vh;
-display:flex;
-flex-direction:column;
-margin:10px 10px 10px;
-border:1px solid #555;
-border-width:1px 1px 1px 1px;
-border-radius:10px;
-}
-.borderfacade {
-min-height: 97.4vh;
-display:flex;
-flex-direction:column;
-margin:10px 10px 10px;
-border:1px solid #555;
-border-width:1px 1px 1px 1px;
-border-radius:10px;
-}
-.articlehr {
-display:none;
-}
-.titlelines {
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-padding:8px 0px 8px 0px;
-margin:0px auto 10px;
-}
-.tableofcontents {
-padding:0px;
-}
-.heading {
-font-size:25px;
-}
-.toptitle {
-font-family:Cinzel-Regular;
-font-size:1.0rem;
-text-align:center;
-margin:20px auto 0px;
-}
-.toptitlefacade {
-font-family:Cinzel-Regular;
-font-size:1.0rem;
-text-align:center;
-margin:20px auto 0px;
-} 
-.headline {
-font-family:TrajanPro3-Regular;
-font-size:1.1rem;
-text-align:center;
-margin:26px auto 10px;
-line-height:1.5;
-}
-.articleheadings {
-font-size:0.9rem;
-text-align:center;
-font-weight:bold;
-}
-.articlesubheadings {
-font-size:0.95rem;
-text-align:center;
-margin:-15px auto -5px;
-}
-.minimalistborder {
-border:1px solid #555;
-outline:0px solid #555;
-border-radius:12px;
-margin:40px auto 40px;
-padding:10px 10px 5px;
-}
-.minimalistcaption {
-font-family:Montserrat-ExtraLightItalic;
-font-size: 16px;
-margin:12px auto 9px;
-border:1px solid #555;
-background:rgba(0,0,0,0.80);
-padding:10px;
-border-radius:12px;
-line-height:1.4;
-}
-.photocaptiontop {
-display:inline-block;
-font-family:Montserrat-ThinItalic;
-font-size:0.85rem;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-margin:16px auto 14px;
-padding:6px 0px 6px;
-line-height:1.6;
-}
-figcaption {
-font-family:Montserrat-ThinItalic;
-font-size:0.85rem;
-text-align:justify;
-line-height:1.6;
-padding-top:10px;
-margin-bottom:0px;
-color:white;
-}
-.figcaptionborder {
-border: 1px solid #555;
-padding:8px;
-border-radius:12px;
-margin-top:12px;
-}
-.figcaptionoverlay {
-position: relative;
-text-align: center;
-color: white;
-font-size:0.95rem;
-}
-.figcaptionbottomleft {
-position: absolute;
-bottom: 4px;
-left: 8px;
-}
-.figcaptiontopleft {
-position: absolute;
-top: 4px;
-left: 8px;
-}
-.figcaptiontopright {
-position: absolute;
-top: 4px;
-right: 8px;
-}
-.figcaptionbottomright {
-position: absolute;
-bottom: 4px;
-right: 8px;
-}
-.figcaptioncentered {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-.serafina {
-display:block;
-margin-left: auto;
-margin-right: auto;
-}
-.serafinafacade {
-margin-left: auto;
-margin-right: auto;
-}
-.motherdaughter {
-margin-left: auto;
-margin-right: auto;
-}
-.motherdaughterfacade {
-margin-left: auto;
-margin-right: auto;
-}
-.alps {
-margin-left: auto;
-margin-right: auto;
-}
-.reichfamilyteengirl {
-margin-left: auto;
-margin-right: auto;
-}
-.zeroMargin_mobile {
-margin-left: 0;
-}
-.hide_mobile {
-display: none;
-}
-/*Anchors*/
-# {
-scroll-margin-top:10px;
-}
-# {
-scroll-margin-top:10px;
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
 }
 
-/* Tablet Layout 701px to 835px - Ipad Pro 11-inch
-down to 600px wide Kindle Fires and Samsung Galaxy Tab 2. These are 600px
-wide but I take it to 701 to be on the safe side. Most of my images
-are 700px max so stop here.
-Inherits styles from: Mobile Layout. */
-@media only screen and (min-width: 701px) {
-
-.desktopdisplay {
-display:none;
-}
-.tabletdisplay {
-display:block;
-}
-.mobiledisplay {
-display:none;
-}
-.title {
-display:block;
-padding:0px 0px 5px;
-}
-.photolayout {
-display:flex;
-flex-wrap:wrap;
-border:1px solid #555;
-border-radius:12px;
-background-position:center;
-background-size:cover;
-}
-.border-radius-top-left {
-border-radius:12px 0px 0px 0px;
-}
-.border-radius-top-right {
-border-radius:0px 12px 0px 0px;
-}
-.border-radius-bottom-left {
-border-radius:0px 0px 0px 12px;
-}
-.border-radius-bottom-right {
-border-radius:0px 0px 12px 0px;
-}
-.floralpagedivider {
-max-width:200px;
-display:block;
-margin-left:auto;
-margin-right:auto;
-}
-.trajan {
-font-family:TrajanPro3-Regular;
-font-size:23px;
-}
-.cinzel {
-font-family:Cinzel-Regular;
-font-size:23px;
-margin-top:-8px;
-}
-.vivaldi {
-font-family:VIVALDII;
-font-size:30px;
-margin-top:-8px;
-}
-.edwardian {
-font-family:ITCEDSCR;
-font-size:42px;
-}
-.Montserrat-ThinItalic {
-font-family:Montserrat-ThinItalic;
-font-size:1.09rem;
-}
-.Montserrat-ExtraLightItalic {
-font-family:Montserrat-ExtraLightItalic;
-font-size: 20px;
-line-height:1.5;
-}
-.cinzeloutlined {
-font-family:Cinzel-Regular;
-font-size:15px;
-margin:-5px auto 0px;
-padding:10px 10px 0px;
-}
-.vivaldioutlined {
-font-family:VIVALDII;
-font-size:19px;
-margin:-5px auto 0px;
-padding:10px 10px 0px;
-}
-.content {
-display: block;
-padding: 15px;
-}
-.bodytypography {
-font-family:OpenSans-Light;
-font-size:1.09rem;
-color:#FFFFFF;
-line-height:1.6;
-}
-.footeralwaysbottom {
-min-height: 100vh;
-display:flex;
-flex-direction:column;
-margin-bottom:15px;
-}
-.border {
-min-height:100vh;
-display:flex;
-flex-direction:column;
-margin:15px 15px 15px;
-border:1px solid #555;
-border-width:1px 1px 1px 1px;
-border-radius:12px;
-}
-.borderfacade {
-min-height: 100vh;
-display:flex;
-flex-direction:column;
-margin:15px 15px 15px;
-border:1px solid #555;
-border-width:1px 1px 1px 1px;
-border-radius:12px;
-max-width:850px;
-}
-.articlehr {
-display:none;
-}
-.titlelines {
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-padding:8px 0px 8px 0px;
-margin:0px auto 15px;
-}
-.tableofcontents {
-padding:6px;
-}
-.toptitle {
-font-family:Cinzel-Regular;
-font-size:1.1rem;
-text-align:center;
-margin:20px auto 0px;
-}
-.toptitlefacade {
-font-family:Cinzel-Regular;
-font-size:1.1rem;
-text-align:center;
-margin:20px auto 0px;
-text-align:center;
-}  
-.headline {
-font-family:TrajanPro3-Regular;
-font-size:1.1rem;
-text-align:center;
-margin:26px auto 10px;
-line-height:1.5;
-}
-.articleheadings {
-font-size:1.0rem;
-text-align:center;
-font-weight:bold;
-}
-.articlesubheadings {
-font-size:0.95rem;
-text-align:center;
-margin:-15px auto -5px;
-}
-.minimalistborder {
-border:1px solid #555;
-border-radius:12px;
-margin:40px auto 40px;
-padding:12px 12px 12px;
-}
-.minimalistcaption {
-font-family:Montserrat-ExtraLightItalic;
-font-size: 16px;
-margin:12px auto 0px;
-border:1px solid #555;
-background:rgba(0,0,0,0.80);
-padding:10px;
-border-radius:12px;
-line-height:1.4;
-}
-.photocaptiontop {
-display:inline-block;
-font-family:Montserrat-ThinItalic;
-font-size: 0.95rem;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-margin:15px auto 4px;
-padding:5px 0px 5px;
-line-height:1.6;
-}
-figcaption {
-font-family:Montserrat-ThinItalic;
-font-size: 0.95rem;
-text-align:justify;
-line-height:1.6;
-padding-top:10px;
-margin-bottom:2px;
-color:white;
-}
-.figcaptionborder {
-border-width:0px;
-padding:0px;
-border-radius:0px;
-}
-.figcaptionoverlay {
-position: relative;
-text-align: center;
-color: white;
-font-size:0.95rem;
-}
-.figcaptionbottomleft {
-position: absolute;
-bottom: 4px;
-left: 8px;
-}
-.figcaptiontopleft {
-position: absolute;
-top: 4px;
-left: 8px;
-}
-.figcaptiontopright {
-position: absolute;
-top: 4px;
-right: 8px;
-}
-.figcaptionbottomright {
-position: absolute;
-bottom: 4px;
-right: 8px;
-}
-.figcaptioncentered {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-.header {
-text-align:center;
-margin:-2px auto -2px;
-line-height:1;
-}
-.reichheader {
-display:flex;
-margin: 3px 0px 12px;
-justify-content:space-between;
-align-items:center;
-}
-.reichcftitle {
-font-family:TrajanPro3-Regular;
-color:#EFEFEF;
-font-size:1.8rem;
-text-align:center;
-margin:0px auto 0px;
-}
-.reichcfsubtitle {
-font-family:Montserrat-ThinItalic;
-font-size:1.0rem;
-text-align:center;
-margin:-6px auto 0px;
-}
-.reichheaderfamily {
-display:flex;
-margin: 0px 0px 0px;
-justify-content:space-between;
-align-items:center;
-line-height:1;
-}
-.titlecorners {
-max-width:85px;
-margin:-8px -5px 5px;
-opacity:1.0;
-}
-.reichcftitlefamily {
-font-family:ITCEDSCR;
-color:#FFFFFF;
-font-size:2.5rem;
-text-align:center;
-margin:-4px auto 0px;
-}
-.reichcfsubtitlefamily {
-font-family:Montserrat-ThinItalic;
-font-size:0.95rem;
-text-align:center;
-margin:2px auto 15px;
-}
-.reichfooterimg {
-display:block;
-max-width:180px;
-margin:35px auto 0px;
-}
-.footertitle {
-font-family:TrajanPro3-Regular;
-font-size:1.7rem;
-text-align:center;
-margin-bottom:-4px;
-}
-.footertitlefamily {
-font-family:ITCEDSCR;
-color:#FFFFFF;
-font-size:2.2rem;
-text-align:center;
-margin-bottom:-4px;
-}
-.footeremail {
-font-family:Montserrat-ThinItalic;
-color:#FFFFFF;
-font-size:1.0rem;
-font-weight:bold;
-text-align:center;
-margin:4px auto auto;
-}
-.footercopyright {
-font-family:Montserrat-ThinItalic;
-color:#FFFFFF;
-font-size:0.95rem;
-text-align:center;
-margin:8px auto auto;
-}
-footer {
-margin-top:auto;
-margin-bottom:30px;
-}
-.bottomhr {
-margin:auto auto auto;
-border:1px solid #555;
-border-width:0px 0px 1px 0px;
-}
-.summary {
-font-size:1.0rem;
-line-height:2.0;
-padding:15px 0px 15px;
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-margin:15px auto 30px;
-}
-.summaryfacade {
-font-size:1.0rem;
-line-height:2.0;
-padding:15px 0px 15px;
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-margin:0px auto -20px;
-}
-.summaryfacadeborderless {
-font-size:1.08rem;
-line-height:1.8;
-margin:0px auto -20px;
-}
-.serafina {
-max-width: 850px;
-display:block;
-margin-right:auto;
-margin-left:auto;
-}
-.serafinafacade {
-max-width:800px;
-margin:0px auto 0px;
-}
-.motherdaughter {
-max-width: 850px;
-margin-right:auto;
-margin-left:auto;
-}
-.motherdaughterfacade {
-max-width:850px;
-margin:0px auto 0px;
-}
-.alps {
-max-width:500px;
-float:right;
-margin-left:15px;
-}
-.reichfamilyteengirl {
-max-width:500px;
-float:left;
-margin-right:15px;
-}
-.mySlides {
-max-width:100%;
-max-height:100%;
-padding-top:0px;
-}
-.hide_tablet {
-display: none;
-}
-.zeroMargin_tablet {
-margin-left: 0;
-}
-/*Anchors*/
-# {
-scroll-margin-top:26px;
-}
-# {
-scroll-margin-top:26px;
-}
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
 }
 
-/* For centering content while holding horizontally rotated mobile phones up to 1000px long into account.*/
-@media only screen and (min-width: 900px) {
-
-.borderfacade {
-min-height: 100vh;
-display:flex;
-flex-direction:column;
-margin:15px auto 15px;
-border:1px solid #555;
-border-width:1px 1px 1px 1px;
-border-radius:12px;
-max-width:850px;
-}
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
 }
 
-/* 12.9 inch Ipad 1024x1366 Custom. This is just for 12-inch Ipad layouts holding
-rotated mobile phones up to 1000px long into account. Inherits styles from: 
-Mobile Layout and Tablet Layout. */
-@media only screen and (min-width: 1001px) {
-
-.border {
-min-height:100vh;
-display:flex;
-flex-direction:column;
-margin:15px 15px 15px;
-border:1px solid #555;
-border-width:1px 1px 1px 1px;
-border-radius:12px;
-}
-.borderfacade {
-min-height: 100vh;
-display:flex;
-flex-direction:column;
-margin:15px auto 15px;
-border:1px solid #555;
-border-width:1px 1px 1px 1px;
-border-radius:12px;
-max-width:850px;
-}
-.articlehr {
-display:block;
-margin:0px auto 15px;
-border:1px solid #555;
-border-width:0px 0px 1px 0px;
-}
-.serafina {
-max-width: 650px;
-float:right;
-margin-left:15px;
-}
-.motherdaughter {
-max-width:675px;
-float:left;
-margin-right:15px;
-}
-.alps {
-max-width:650px;
-float:right;
-margin-left:15px;
-}
-.toptitle {
-font-family:Cinzel-Regular;
-font-size:1.1rem;
-text-align:center;
-margin:0px auto 0px;
-}
-.toptitlefacade {
-font-family:Cinzel-Regular;
-font-size:1.1rem;
-text-align:center;
-margin:20px auto 0px;
-}
-.reichfamilyteengirl {
-max-width:650px;
-float:left;
-margin-right:15px;
-}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/* Desktop Layout: 1025px to a max of 1366px - Everything above Ipad Pro 11-inch. Inherits styles from: Mobile Layout and Tablet Layout. */
-@media only screen and (min-width: 1025px) {
+</style>
 
-.desktopdisplay {
-display:block;
-}
-.tabletdisplay {
-display:none;
-}
-.mobiledisplay {
-display:none;
-}
-.title {
-display:block;
-padding:0px 0px 5px;
-}
-.photolayout {
-display:flex;
-flex-wrap:wrap;
-border:1px solid #555;
-border-radius:12px;
-}
-.border-radius-top-left {
-border-radius:12px 0px 0px 0px;
-}
-.border-radius-top-right {
-border-radius:0px 12px 0px 0px;
-}
-.border-radius-bottom-left {
-border-radius:0px 0px 0px 12px;
-}
-.border-radius-bottom-right {
-border-radius:0px 0px 12px 0px;
-}
-.floralpagedivider {
-max-width:230px;
-display:block;
-margin-left:auto;
-margin-right:auto;
-}
-.trajan {
-font-family:TrajanPro3-Regular;
-font-size:23px;
-}
-.cinzel {
-font-family:Cinzel-Regular;
-font-size:23px;
-margin-top:-8px;
-}
-.vivaldi {
-font-family:VIVALDII;
-font-size:30px;
-margin-top:-8px;
-}
-.edwardian {
-font-family:ITCEDSCR;
-font-size:42px;
-}
-.Montserrat-ThinItalic {
-font-family:Montserrat-ThinItalic;
-font-size: 1.09rem;
-}
-.Montserrat-ExtraLightItalic {
-font-family:Montserrat-ExtraLightItalic;
-font-size: 20px;
-line-height:1.5;
-}
-.cinzeloutlined {
-font-family:Cinzel-Regular;
-font-size:16px;
-margin:-5px auto 0px;
-padding:10px 10px 0px;
-}
-.content {
-display:block;
-padding: 15px;
-}
-.bodytypography {
-font-family:OpenSans-Light;
-font-size:1.09rem;
-color:#FFFFFF;
-line-height:1.6;
-}
-.footeralwaysbottom {
-min-height: 100vh;
-display:flex;
-flex-direction:column;
-margin-bottom:15px;
-}
-.border {
-min-height:100vh;
-display:flex;
-flex-direction:column;
-margin:15px 15px 15px;
-border:1px solid #555;
-border-width:1px 1px 1px 1px;
-border-radius:0px;
-}
-.borderfacade {
-min-height: 100vh;
-display:flex;
-flex-direction:column;
-margin:15px auto 15px;
-border:1px solid #555;
-border-width:1px 1px 1px 1px;
-border-radius:12px;
-max-width:850px;
-}
-.articlehr {
-display:block;
-margin:0px auto 15px;
-border:1px solid #555;
-border-width:0px 0px 1px 0px;
-}
-.titlelines {
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-padding:8px 0px 8px 0px;
-margin:0px auto 15px;
-}
-.tableofcontents {
-padding: 15px;
-}
-.toptitle {
-font-family:Cinzel-Regular;
-font-size:1.1rem;
-text-align:center;
-margin:0px auto 0px;
-}
-.toptitlefacade {
-font-family:Cinzel-Regular;
-font-size:1.1rem;
-margin:20px auto 0px;
-text-align:center;
-} 
-.headline {
-font-family:TrajanPro3-Regular;
-font-size:1.1rem;
-text-align:center;
-margin:0px auto 10px;
-line-height:1.5;
-}
-.articleheadings {
-font-size:1.0rem;
-text-align:center;
-font-weight:bold;
-}
-.articlesubheadings {
-font-size:0.95rem;
-text-align:center;
-margin:-15px auto -5px;
-}
-/*maxwidth changed for
-each photo inline*/
-.minimalistborder {
-border:1px solid #555;
-border-radius:12px;
-margin:40px auto 40px;
-padding:15px 15px 15px;
-}
-.minimalistcaption {
-font-family:Montserrat-ExtraLightItalic;
-font-size: 16px;
-margin:15px auto 0px;
-border:1px solid #555;
-background:rgba(0,0,0,0.80);
-padding:10px;
-border-radius:12px;
-line-height:1.4;
-}
-.photocaptiontop {
-display:inline-block;
-font-family:Montserrat-ThinItalic;
-font-size: 0.95rem;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-margin:15px auto 4px;
-padding:5px 0px 5px;
-line-height:1.6;
-}
-figcaption {
-font-family:Montserrat-ThinItalic;
-text-align:justify;
-font-size: 0.95rem;
-line-height:1.6;
-padding-top:10px;
-margin-bottom:2px;
-color:white;	
-}
-.figcaptionborder {
-border-width:0px;
-padding:0px;
-border-radius:0px;
-}
-.figcaptionoverlay {
-position: relative;
-text-align: center;
-color: white;
-font-size:0.95rem;
-}
-.figcaptionbottomleft {
-position: absolute;
-bottom: 4px;
-left: 8px;
-}
-.figcaptiontopleft {
-position: absolute;
-top: 4px;
-left: 8px;
-}
-.figcaptiontopright {
-position: absolute;
-top: 4px;
-right: 8px;
-}
-.figcaptionbottomright {
-position: absolute;
-bottom: 4px;
-right: 8px;
-}
-.figcaptioncentered {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-.header {
-text-align:center;
-margin:-8px auto -8px;
-line-height:1;
-}
-.reichheader {
-display:flex;
-margin: 3px 0px 12px;
-justify-content:space-between;
-align-items:center;
-}
-.reichcftitle {
-font-family:TrajanPro3-Regular;
-color:#EFEFEF;
-font-size:1.8rem;
-text-align:center;
-margin:0px auto 0px;
-}
-.reichcfsubtitle {
-font-family:Montserrat-ThinItalic;
-font-size:1.0rem;
-text-align:center;
-margin:-6px auto 0px;
-}
-.reichheaderfamily {
-display:flex;
-margin:0px 0px 0px;
-justify-content:space-between;
-align-items:center;
-line-height:1;
-}
-.titlecorners {
-max-width:85px;
-margin:-8px -5px 5px;
-opacity:1.0;
-}
-.reichcftitlefamily {
-font-family:ITCEDSCR;
-color:#FFFFFF;
-font-size:2.5rem;
-text-align:center;
-margin:0px auto 0px;
-}
-.reichcfsubtitlefamily {
-font-family:Montserrat-ThinItalic;
-font-size:0.95rem;
-text-align:center;
-margin:2px auto 15px;
-}
-.reichfooterimg {
-display:block;
-max-width:180px;
-margin:35px auto 0px;
-}
-.footertitle {
-font-family:TrajanPro3-Regular;
-font-size:1.7rem;
-text-align:center;
-margin-bottom:-4px;
-}
-.footertitlefamily {
-font-family:ITCEDSCR;
-color:#FFFFFF;
-font-size:2.2rem;
-text-align:center;
-margin-bottom:-4px;
-}
-.footeremail {
-font-family:Montserrat-ThinItalic;
-color:#FFFFFF;
-font-size:1.0rem;
-font-weight:bold;
-text-align:center;
-margin:4px auto auto;
-}
-.footercopyright {
-font-family:Montserrat-ThinItalic;
-color:#FFFFFF;
-font-size:0.95rem;
-text-align:center;
-margin:8px auto auto;
-}
-footer {
-margin-top:auto;
-margin-bottom:30px;
-}
-.bottomhr {
-clear:both;
-margin:30px auto auto;
-border:1px solid #555;
-border-width:0px 0px 1px 0px;
-}
-.summary {
-font-size:1.0rem;
-line-height:2.0;
-padding:15px 0px 15px;
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-margin:15px auto 30px;
-}
-.summaryfacade {
-font-size:1.0rem;
-line-height:2.0;
-padding:15px 0px 15px;
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-margin:0px auto -20px;
-}
-.summaryfacadeborderless {
-font-size:1.08rem;
-line-height:1.6;
-margin:0px auto -20px;
-}
-.serafina {
-max-width: 700px;
-float:right;
-margin-left:15px;
-}
-.serafinafacade {
-max-width:800px;
-margin:0px auto 0px;
-}
-.motherdaughter {
-max-width: 850px;
-float:left;
-margin-right:15px;
-}
-.motherdaughterfacade {
-max-width:850px;
-margin:0px auto 0px;
-}
-.alps {
-max-width:650px;
-float:right;
-margin-left:15px;
-}
-.reichfamilyteengirl {
-max-width:850px;
-float:left;
-margin-right:15px;
-}
-.mySlides {
-max-width: 100%;
-max-height: 100%;
-}
-.zeroMargin_desktop {
-margin-left: 0;
-}
-.hide_desktop {
-display: none;
-}
-/*Anchors*/
-# {
-scroll-margin-top:26px;
-}
-# {
-scroll-margin-top:26px;
-}
-}
+<script src="respond.min.js"></script>
 
-/* Desktop Layout: 1367px and above. This is here to place the white outline around the content with 15px margin top and bottom for screens above 1366px. Inherits styles from: Mobile Layout and Tablet Layout. */
-@media only screen and (min-width: 1367px) {
-.border {
-min-height:100vh;
-margin:15px auto 15px;
-border:1px solid #555;
-border-width:1px 1px 1px 1px;
-max-width:1333px;
-}
-.borderfacade {
-min-height: 100vh;
-display:flex;
-flex-direction:column;
-margin:15px auto 15px;
-border:1px solid #555;
-border-width:1px 1px 1px 1px;
-border-radius:12px;
-max-width:850px;
-}
-.content {
-display:block;
-padding: 15px;
-}
-.bodytypography {
-font-family:OpenSans-Light;
-font-size:1.09rem;
-color:#FFFFFF;
-line-height:1.6;
-}
-}
+<script src="essential_audio.js"></script>
+
+<script>
+    function killCopy(e){
+        return false;
+    }
+    function reEnable(){
+        return true;
+    }
+    document.onselectstart=new Function ("return false");
+    if (window.sidebar){
+        document.onmousedown=killCopy;
+        document.onclick=reEnable;
+    }
+</script>
+
+</head>
+
+<body oncontextmenu="return false;">
+
+<script>
+document.addEventListener('keyup', (e) => {
+    if (e.key == 'PrintScreen') {
+        navigator.clipboard.writeText('');
+        alert('Screenshots disabled!');
+    }
+});
+</script>
+
+<noscript>
+
+<div style="padding:10px;margin:15px auto 15px;max-width:500px;">
+
+<p style="display:block;margin:0px auto 0px;color:white;font-weight:bold;font-size:1.5rem;text-align:center;font-size:1.3rem;">Reich Family</p>
+
+<img style="display:block;margin:20px auto 20px;max-width:300px;" src="images/celticshield.png" alt="Reich Family"/>
+
+<p style="display:block;margin:0px auto 0px;color:white;font-style:italic;font-size:1.1rem;text-align:justify;max-width:300px;">Javascript is disabled in your browser. This page relies on Javascript. Please enable Javascript in your web browser and refresh the page to view it.</p>
+
+</div>
+	<style type="text/css">
+		#border { display:none; }
+	</style>
+</noscript>
+
+</head>
+
+<body>
+
+<div id="border" class="border">
+
+<div class="content" style="text-align:justify;">
+
+<div class="bodytypography">
+
+<div class="header">
+<div class="reichcftitlefamily">The Reich Family</div>
+<div class="reichcfsubtitlefamily">You Could Not Destroy Us</div>
+</div>
+
+<div class="articlehr"></div>
+
+<figure class="motherdaughter desktopdisplay">
+<div class="photolayout">
+<img style="width:50%;" class="border-radius-top-left" src="images/motherdaughterfielda.jpg" alt="motherdaughterfield"/>
+<img style="width:50%;" class="border-radius-top-right" src="images/motherdaughterfieldb.jpg" alt="motherdaughterfield"/>
+<img style="width:50%;" src="images/motherdaughterfieldc.jpg" alt="motherdaughterfield"/>
+<img style="width:50%;" src="images/motherdaughterfieldd.jpg" alt="motherdaughterfield"/>
+<img style="width:50%;" src="images/motherdaughterfielde.jpg" alt="motherdaughterfield"/>
+<img style="width:50%;" src="images/motherdaughterfieldf.jpg" alt="motherdaughterfield"/>
+<img style="width:50%;" class="border-radius-bottom-left" src="images/motherdaughterfieldg.jpg" alt="motherdaughterfield"/>
+<img style="width:50%;" class="border-radius-bottom-right" src="images/motherdaughterfieldh.jpg" alt="motherdaughterfield"/>
+</div>
+<figcaption>Your attempt to destroy our family in 2010 was unsuccessful. Fifteen years later, the Reich Family still exists. (Photorealistic Rendering Designed by Reich / Original Photo by Alexander)</figcaption>
+</figure>
+
+<figure class="motherdaughter tabletdisplay">
+<div class="photolayout">
+<img style="width:50%;" class="border-radius-top-left" src="images/motherdaughterfieldSquarea.jpg" alt="motherdaughterfieldSquare"/>
+<img style="width:50%;" class="border-radius-top-right" src="images/motherdaughterfieldSquareb.jpg" alt="motherdaughterfieldSquare"/>
+<img style="width:50%;" src="images/motherdaughterfieldSquarec.jpg" alt="motherdaughterfieldSquare"/>
+<img style="width:50%;" src="images/motherdaughterfieldSquared.jpg" alt="motherdaughterfieldSquare"/>
+<img style="width:50%;" src="images/motherdaughterfieldSquaree.jpg" alt="motherdaughterfieldSquare"/>
+<img style="width:50%;" src="images/motherdaughterfieldSquaref.jpg" alt="motherdaughterfieldSquare"/>
+<img style="width:50%;" class="border-radius-bottom-left" src="images/motherdaughterfieldSquareg.jpg" alt="motherdaughterfieldSquare"/>
+<img style="width:50%;" class="border-radius-bottom-right" src="images/motherdaughterfieldSquareh.jpg" alt="motherdaughterfieldSquare"/>
+</div>
+<figcaption>Your attempt to destroy our family in 2010 was unsuccessful. Fifteen years later, the Reich Family still exists. (Photorealistic Rendering Designed by Reich / Original Photo by Alexander)</figcaption>
+</figure>
+
+<figure class="motherdaughter mobiledisplay">
+<div class="photolayout">
+<img style="width:50%;" class="border-radius-top-left" src="images/motherdaughterfieldSquarea.jpg" alt="motherdaughterfieldSquare"/>
+<img style="width:50%;" class="border-radius-top-right" src="images/motherdaughterfieldSquareb.jpg" alt="motherdaughterfieldSquare"/>
+<img style="width:50%;" src="images/motherdaughterfieldSquarec.jpg" alt="motherdaughterfieldSquare"/>
+<img style="width:50%;" src="images/motherdaughterfieldSquared.jpg" alt="motherdaughterfieldSquare"/>
+<img style="width:50%;" src="images/motherdaughterfieldSquaree.jpg" alt="motherdaughterfieldSquare"/>
+<img style="width:50%;" src="images/motherdaughterfieldSquaref.jpg" alt="motherdaughterfieldSquare"/>
+<img style="width:50%;" class="border-radius-bottom-left" src="images/motherdaughterfieldSquareg.jpg" alt="motherdaughterfieldSquare"/>
+<img style="width:50%;" class="border-radius-bottom-right" src="images/motherdaughterfieldSquareh.jpg" alt="motherdaughterfieldSquare"/>
+</div>
+<figcaption>Your attempt to destroy our family in 2010 was unsuccessful. Fifteen years later, the Reich Family still exists. (Photorealistic Rendering Designed by Reich / Original Photo by Alexander)</figcaption>
+</figure>
+
+<p class="headline">Our Family Still Exists</p>
+<p class="articlesubheadings">Fifteen Years Later</p>
+
+<p class="Montserrat-ThinItalic">This is not the Reich Family's official website. This site serves as an introduction to the Reich Family from a different perspective. After reading this introduction, if you wish to know more about us, please visit the <a href="https://reich.tf" target="_blank"><b>Reich Family</b></a> official website.</p>
+
+<p>In 2010, a nineteen year old San Francisco girl interviewed with mainstream media for two months stating that I was the leader of a sex cult. Her account was filled with stories of the sexual abuse of little girls and a death squad that would kill on my command. My family is diametrically opposed to every aspect of that accusation which was made by a person who was never a member of our family and was never in our presence to witness a single thing she accused our family of doing. The very notion that we sexually abuse our children is repulsive to us and violates everything that we stand for and believe in. Our children and teens are highly valued and protected. Our focus is not on little girls, teenage girls, or any one member or small group in our family. Each member of our family is equally valued, loved, and respected.</p>
+
+<p>In the 2010 attack, my family and I were compared in the media to Jim Jones and the Peoples Temple as well as Charles Manson and the Manson Family. I have gone into great depth about Jim Jones and his followers in the article <a href="https://johnmarkkarr.com/thefamily" target="_blank">Tale of Two Cults</a>. Over 930 people followed Jim Jones to the ends of the earth. This included 909 members who died in Jonestown; 4 members who died at the house in Georgetown; 14 members who defected that day, with one being killed; and members Tim Carter, Mike Carter, and Mike Prokes who were apprehended by authorities that day. There were various defectors over the years. Prior to that fateful day on November 18th 1978, 930 people were convinced they should live in a remote jungle in Guyana South America to be with Jim Jones and fellow members of the Peoples Temple family. They proved they would do anything or sacrifice anything for their leader.</p>
+
+<p>His response to their loyalty was abuse, deprivation, near starvation, and their ultimate deaths. How he could bring harm to such precious souls who looked up to him and called him Dad, I will never understand. Having witnessed the atrocities of Jonestown, any leader of a similar family should never wish to make the same mistakes Jones made. What happened in Jonestown should bring any good and decent leader closer to his own family, with a renewed pledge to love them more, to appreciate them more, and to give them everything that is good. Our family denounces Jim Jones and the Peoples Temple as well as Charles Manson and the Manson Family. We guard against the religious extremism and leader worship that killed the members of Jim Jones' religious group. We have studied the lives and deaths of Jim Jones and the Peoples Temple and have learned from every terrible mistake that was made.</p>
+
+<p style="margin-bottom:-20px;">My family does not worship me as their God. They respect me as their leader. My family does not fear me because I would never bring harm to them. My family does not feel disappointment or doubt in me because I never deprive them of what they so richly deserve. I have earned my family's respect, love, loyalty, and trust by working hard every day to make their lives better. Our family lives a covert life, not because we have something to hide, but because we must protect ourselves from another attack such as the one in 2010. We have a right to privately live our lives in a beautiful and peaceful place. Your attempt to destroy our family in 2010 was unsuccessful. Fifteen years later, we still exist. To learn more about us, visit the <a href="https://reich.tf" target="_blank">Reich Family</a> website.</p>
+
+</div>
+
+</div>
+
+<footer>
+<p class="footertitlefamily">The Reich Family</p>
+<p class="footeremail"><a href="mailto:family@reich.tf">family@reich.tf</a></p>
+<p class="footercopyright">Copyright 2025 All Rights Reserved</p>
+</footer>
+
+</div>

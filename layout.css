@@ -51,6 +51,11 @@ margin:auto;
 .title {
 padding:0px 0px 5px;
 }
+.header {
+text-align:center;
+margin:6px auto 15px;
+line-height:1;
+}
 .reichheader {
 display:flex;
 margin: 3px 0px 9px;
@@ -302,9 +307,21 @@ text-align:center;
 margin:20px auto 0px;
 } 
 .headline {
-font-size:1rem;
+font-family:TrajanPro3-Regular;
+font-size:1.1rem;
 text-align:center;
-margin:auto;
+margin:26px auto 10px;
+line-height:1.5;
+}
+.articleheadings {
+font-size:0.9rem;
+text-align:center;
+font-weight:bold;
+}
+.articlesubheadings {
+font-size:0.95rem;
+text-align:center;
+margin:-15px auto -5px;
 }
 .minimalistborder {
 border:1px solid #555;
@@ -390,7 +407,6 @@ margin-left: auto;
 margin-right: auto;
 }
 .motherdaughter {
-display:block;
 margin-left: auto;
 margin-right: auto;
 }
@@ -568,9 +584,21 @@ margin:20px auto 0px;
 text-align:center;
 }  
 .headline {
-font-size:1.09rem;
+font-family:TrajanPro3-Regular;
+font-size:1.1rem;
 text-align:center;
-margin:-5px auto auto;
+margin:26px auto 10px;
+line-height:1.5;
+}
+.articleheadings {
+font-size:1.0rem;
+text-align:center;
+font-weight:bold;
+}
+.articlesubheadings {
+font-size:0.95rem;
+text-align:center;
+margin:-15px auto -5px;
 }
 .minimalistborder {
 border:1px solid #555;
@@ -643,6 +671,11 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
+}
+.header {
+text-align:center;
+margin:-2px auto -2px;
+line-height:1;
 }
 .reichheader {
 display:flex;
@@ -765,7 +798,6 @@ margin:0px auto 0px;
 }
 .motherdaughter {
 max-width: 850px;
-display:block;
 margin-right:auto;
 margin-left:auto;
 }
@@ -1019,6 +1051,23 @@ font-size:1.1rem;
 margin:20px auto 0px;
 text-align:center;
 } 
+.headline {
+font-family:TrajanPro3-Regular;
+font-size:1.1rem;
+text-align:center;
+margin:0px auto 10px;
+line-height:1.5;
+}
+.articleheadings {
+font-size:1.0rem;
+text-align:center;
+font-weight:bold;
+}
+.articlesubheadings {
+font-size:0.95rem;
+text-align:center;
+margin:-15px auto -5px;
+}
 /*maxwidth changed for
 each photo inline*/
 .minimalistborder {
@@ -1092,6 +1141,11 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
+}
+.header {
+text-align:center;
+margin:-8px auto -8px;
+line-height:1;
 }
 .reichheader {
 display:flex;

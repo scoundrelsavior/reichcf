@@ -29,6 +29,9 @@ text-decoration:none;
 .desktopdisplay {
 display:none;
 }
+.twelveninetabletdisplay {
+display:none;
+}
 .tabletdisplay {
 display:none;
 }
@@ -51,11 +54,6 @@ margin:auto;
 .title {
 padding:0px 0px 5px;
 }
-.header {
-text-align:center;
-margin:6px auto 15px;
-line-height:1;
-}
 .reichheader {
 display:flex;
 margin: 3px 0px 9px;
@@ -77,7 +75,7 @@ margin:-6px auto 0px;
 }
 .reichheaderfamily {
 display:flex;
-margin: 0px 0px 0px;
+margin: 5px 0px 5px;
 justify-content:space-between;
 align-items:center;
 line-height:1;
@@ -92,14 +90,14 @@ font-family:ITCEDSCR;
 color:#FFFFFF;
 font-size:1.9rem;
 text-align:center;
-margin:-4px auto 0px;
+margin:-2px auto 0px;
 }
 .reichcfsubtitlefamily {
 font-family:Montserrat-ThinItalic;
 color:#FFFFFF;
 font-size:0.80rem;
 text-align:center;
-margin:2px auto 9px;
+margin:2px auto 8px;
 }
 .reichfooterimg {
 display:block;
@@ -153,7 +151,7 @@ padding:15px 0px 15px;
 display:inline-block;
 border:1px solid #555;
 border-width:1px 0px 1px 0px;
-margin:30px auto 30px;
+margin:0px auto 30px;
 }
 .summaryfacade {
 font-size:0.92rem;
@@ -220,7 +218,8 @@ font-size:36px;
 }
 .Montserrat-ThinItalic {
 font-family:Montserrat-ThinItalic;
-font-size:1.0rem;
+font-size: 16px;
+line-height:1.5;
 }
 .Montserrat-ExtraLightItalic {
 font-family:Montserrat-ExtraLightItalic;
@@ -263,9 +262,9 @@ margin-bottom:10px;
 min-height: 97.3vh;
 display:flex;
 flex-direction:column;
-margin:10px 10px 10px;
+margin:0px 0px 0px;
 border:1px solid #555;
-border-width:1px 1px 1px 1px;
+border-width:0px 0px 0px 0px;
 border-radius:10px;
 }
 .borderfacade {
@@ -306,21 +305,9 @@ text-align:center;
 margin:20px auto 0px;
 } 
 .headline {
-font-family:TrajanPro3-Regular;
-font-size:1.0rem;
+font-size:1rem;
 text-align:center;
-margin:26px auto 10px;
-line-height:1.5;
-}
-.articleheadings {
-font-size:0.9rem;
-text-align:center;
-font-weight:bold;
-}
-.articlesubheadings {
-font-size:0.95rem;
-text-align:center;
-margin:-15px auto -5px;
+margin:auto;
 }
 .minimalistborder {
 border:1px solid #555;
@@ -409,6 +396,30 @@ margin-right: auto;
 margin-left: auto;
 margin-right: auto;
 }
+.motherdaughterfall {
+margin-left: auto;
+margin-right: auto;
+}
+.motherdaughtergarden {
+margin-right:auto;
+margin-left:auto;
+}
+.motherson {
+margin-left: auto;
+margin-right: auto;
+}
+.littlegirlspastelpink {
+margin-left: auto;
+margin-right: auto;
+}
+.girlfirstcommunion {
+margin-left: auto;
+margin-right: auto;
+}
+.motherdaughterfield {
+margin-left: auto;
+margin-right: auto;
+}
 .motherdaughterfacade {
 margin-left: auto;
 margin-right: auto;
@@ -417,7 +428,19 @@ margin-right: auto;
 margin-left: auto;
 margin-right: auto;
 }
+.lauterbrunnen {
+margin-left: auto;
+margin-right: auto;
+}
 .reichfamilyteengirl {
+margin-left: auto;
+margin-right: auto;
+}
+.reichfamilyteenboy {
+margin-left: auto;
+margin-right: auto;
+}
+.teengirlschool {
 margin-left: auto;
 margin-right: auto;
 }
@@ -428,10 +451,7 @@ margin-left: 0;
 display: none;
 }
 /*Anchors*/
-# {
-scroll-margin-top:10px;
-}
-# {
+#disciples {
 scroll-margin-top:10px;
 }
 
@@ -443,6 +463,9 @@ Inherits styles from: Mobile Layout. */
 @media only screen and (min-width: 701px) {
 
 .desktopdisplay {
+display:none;
+}
+.twelveninetabletdisplay {
 display:none;
 }
 .tabletdisplay {
@@ -501,7 +524,8 @@ font-size:42px;
 }
 .Montserrat-ThinItalic {
 font-family:Montserrat-ThinItalic;
-font-size:1.09rem;
+font-size: 17px;
+line-height:1.5;
 }
 .Montserrat-ExtraLightItalic {
 font-family:Montserrat-ExtraLightItalic;
@@ -540,9 +564,9 @@ margin-bottom:15px;
 min-height:100vh;
 display:flex;
 flex-direction:column;
-margin:15px 15px 15px;
+margin:0px 0px 0px;
 border:1px solid #555;
-border-width:1px 1px 1px 1px;
+border-width:0px 0px 0px 0px;
 border-radius:12px;
 }
 .borderfacade {
@@ -582,21 +606,9 @@ margin:20px auto 0px;
 text-align:center;
 }  
 .headline {
-font-family:TrajanPro3-Regular;
-font-size:1.1rem;
+font-size:1.09rem;
 text-align:center;
-margin:26px auto 10px;
-line-height:1.5;
-}
-.articleheadings {
-font-size:1.0rem;
-text-align:center;
-font-weight:bold;
-}
-.articlesubheadings {
-font-size:0.95rem;
-text-align:center;
-margin:-15px auto -5px;
+margin:-5px auto auto;
 }
 .minimalistborder {
 border:1px solid #555;
@@ -670,11 +682,6 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
-.header {
-text-align:center;
-margin:-2px auto -2px;
-line-height:1;
-}
 .reichheader {
 display:flex;
 margin: 3px 0px 12px;
@@ -696,7 +703,7 @@ margin:-6px auto 0px;
 }
 .reichheaderfamily {
 display:flex;
-margin: 0px 0px 0px;
+margin: 5px 0px 5px;
 justify-content:space-between;
 align-items:center;
 line-height:1;
@@ -711,13 +718,13 @@ font-family:ITCEDSCR;
 color:#FFFFFF;
 font-size:2.5rem;
 text-align:center;
-margin:-4px auto 0px;
+margin:-6px auto 0px;
 }
 .reichcfsubtitlefamily {
 font-family:Montserrat-ThinItalic;
 font-size:0.95rem;
 text-align:center;
-margin:2px auto 15px;
+margin:2px auto 10px;
 }
 .reichfooterimg {
 display:block;
@@ -795,6 +802,30 @@ max-width:800px;
 margin:0px auto 0px;
 }
 .motherdaughter {
+margin-right:auto;
+margin-left:auto;
+}
+.motherdaughterfall {
+margin-right:auto;
+margin-left:auto;
+}
+.motherdaughtergarden {
+margin-right:auto;
+margin-left:auto;
+}
+.motherson {
+margin-right:auto;
+margin-left:auto;
+}
+.littlegirlspastelpink {
+margin-left: auto;
+margin-right: auto;
+}
+.girlfirstcommunion {
+margin-left: auto;
+margin-right: auto;
+}
+.motherdaughterfield {
 max-width: 850px;
 margin-right:auto;
 margin-left:auto;
@@ -808,10 +839,21 @@ max-width:500px;
 float:right;
 margin-left:15px;
 }
+.lauterbrunnen {
+margin-left: auto;
+margin-right: auto;
+}
 .reichfamilyteengirl {
-max-width:500px;
-float:left;
-margin-right:15px;
+margin-left: auto;
+margin-right: auto;
+}
+.reichfamilyteenboy {
+margin-left: auto;
+margin-right: auto;
+}
+.teengirlschool {
+margin-left: auto;
+margin-right: auto;
 }
 .mySlides {
 max-width:100%;
@@ -825,11 +867,8 @@ display: none;
 margin-left: 0;
 }
 /*Anchors*/
-# {
-scroll-margin-top:26px;
-}
-# {
-scroll-margin-top:26px;
+#disciples {
+scroll-margin-top:15px;
 }
 }
 
@@ -878,13 +917,60 @@ margin:0px auto 15px;
 border:1px solid #555;
 border-width:0px 0px 1px 0px;
 }
+.desktopdisplay {
+display:none;
+}
+.twelveninetabletdisplay {
+display:block;
+}
+.tabletdisplay {
+display:none;
+}
+.mobiledisplay {
+display:none;
+}
 .serafina {
 max-width: 650px;
 float:right;
 margin-left:15px;
 }
 .motherdaughter {
-max-width:675px;
+max-width:700px;
+float:left;
+margin-right:15px;
+}
+.motherdaughtergarden {
+max-width:700px;
+float:right;
+margin-left:15px;
+}
+.motherdaughterfall {
+max-width:700px;
+float:left;
+margin-right:15px;
+}
+.motherdaughtergarden {
+max-width:750px;
+float:right;
+margin-left:15px;
+}
+.motherson {
+max-width:700px;
+float:right;
+margin-left:15px;
+}
+.littlegirlspastelpink {
+max-width:700px;
+float:right;
+margin-left:15px;
+}
+.girlfirstcommunion {
+max-width:700px;
+float:right;
+margin-left:15px;
+}
+.motherdaughterfield {
+max-width:700px;
 float:left;
 margin-right:15px;
 }
@@ -892,6 +978,16 @@ margin-right:15px;
 max-width:650px;
 float:right;
 margin-left:15px;
+}
+.alps {
+max-width:700px;
+float:right;
+margin-left:15px;
+}
+.lauterbrunnen {
+max-width:700px;
+float:left;
+margin-right:15px;
 }
 .toptitle {
 font-family:Cinzel-Regular;
@@ -906,7 +1002,17 @@ text-align:center;
 margin:20px auto 0px;
 }
 .reichfamilyteengirl {
-max-width:650px;
+max-width:700px;
+float:right;
+margin-left:15px;
+}
+.reichfamilyteenboy {
+max-width:700px;
+float:left;
+margin-right:15px;
+}
+.teengirlschool {
+max-width:700px;
 float:left;
 margin-right:15px;
 }
@@ -917,6 +1023,9 @@ margin-right:15px;
 
 .desktopdisplay {
 display:block;
+}
+.twelveninetabletdisplay {
+display:none;
 }
 .tabletdisplay {
 display:none;
@@ -972,7 +1081,8 @@ font-size:42px;
 }
 .Montserrat-ThinItalic {
 font-family:Montserrat-ThinItalic;
-font-size: 1.09rem;
+font-size: 17px;
+line-height:1.5;
 }
 .Montserrat-ExtraLightItalic {
 font-family:Montserrat-ExtraLightItalic;
@@ -1048,23 +1158,6 @@ font-size:1.1rem;
 margin:20px auto 0px;
 text-align:center;
 } 
-.headline {
-font-family:TrajanPro3-Regular;
-font-size:1.1rem;
-text-align:center;
-margin:0px auto 10px;
-line-height:1.5;
-}
-.articleheadings {
-font-size:1.0rem;
-text-align:center;
-font-weight:bold;
-}
-.articlesubheadings {
-font-size:0.95rem;
-text-align:center;
-margin:-15px auto -5px;
-}
 /*maxwidth changed for
 each photo inline*/
 .minimalistborder {
@@ -1139,11 +1232,6 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
-.header {
-text-align:center;
-margin:-8px auto -8px;
-line-height:1;
-}
 .reichheader {
 display:flex;
 margin: 3px 0px 12px;
@@ -1180,13 +1268,13 @@ font-family:ITCEDSCR;
 color:#FFFFFF;
 font-size:2.5rem;
 text-align:center;
-margin:0px auto 0px;
+margin:-6px auto 0px;
 }
 .reichcfsubtitlefamily {
 font-family:Montserrat-ThinItalic;
 font-size:0.95rem;
 text-align:center;
-margin:2px auto 15px;
+margin:2px auto 10px;
 }
 .reichfooterimg {
 display:block;
@@ -1264,6 +1352,36 @@ max-width:800px;
 margin:0px auto 0px;
 }
 .motherdaughter {
+max-width:700px;
+float:left;
+margin-right:15px;
+}
+.motherdaughterfall {
+max-width:700px;
+float:left;
+margin-right:15px;
+}
+.motherdaughtergarden {
+max-width:700px;
+float:right;
+margin-left:15px;
+}
+.motherson {
+max-width:700px;
+float:right;
+margin-left:15px;
+}
+.littlegirlspastelpink {
+max-width:700px;
+float:right;
+margin-left:15px;
+}
+.girlfirstcommunion {
+max-width:700px;
+float:right;
+margin-left:15px;
+}
+.motherdaughterfield {
 max-width: 850px;
 float:left;
 margin-right:15px;
@@ -1277,8 +1395,23 @@ max-width:650px;
 float:right;
 margin-left:15px;
 }
+.lauterbrunnen {
+max-width:700px;
+float:left;
+margin-right:15px;
+}
 .reichfamilyteengirl {
-max-width:850px;
+max-width:700px;
+float:right;
+margin-left:15px;
+}
+.reichfamilyteenboy {
+max-width:700px;
+float:left;
+margin-right:15px;
+}
+.teengirlschool {
+max-width:700px;
 float:left;
 margin-right:15px;
 }
@@ -1293,11 +1426,8 @@ margin-left: 0;
 display: none;
 }
 /*Anchors*/
-# {
-scroll-margin-top:26px;
-}
-# {
-scroll-margin-top:26px;
+#disciples {
+scroll-margin-top:15px;
 }
 }
 

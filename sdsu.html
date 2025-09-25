@@ -14,13 +14,11 @@
 
 <iframe id="myIframe" src="https://reich.tf/research/mariakatsaris-sdsu" style="width: 100%; height:auto; border: none;"></iframe>
 
-<script>function resizeIframe() {
+<script>window.addEventListener('message', function(event) {
     const iframe = document.getElementById('myIframe');
-    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-}
-
-// Call the function when the iframe loads
-document.getElementById('myIframe').onload = resizeIframe;</script>
+    iframe.style.height = event.data + 'px';
+});
+</script>
 
   
 </body>

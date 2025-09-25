@@ -11,16 +11,16 @@
 </head>
 
 <body>
-<div style="max-width:815px;margin:auto;">
-      <iframe id="myIframe" src="https://reich.tf/research/mariakatsaris-sdsu" style="width: 100%; height: 0; border: none;"></iframe>
+<div style="max-width:815px;">
+<iframe id="myIframe" src="https://reich.tf/research/mariakatsaris-sdsu" style="width: 100%; height: 0; border: none;"></iframe>
 
-    <script>
-        // Listen for messages from the iframe
-        window.addEventListener('message', function(event) {
-            const iframe = document.getElementById('myIframe');
-            iframe.style.height = event.data + 'px'; // Set the height of the iframe based on the message received
-        });
-    </script>
-  </div>
+<script>
+// Listen for messages from the iframe
+window.addEventListener('message', function(event) {
+const iframe = document.getElementById('myIframe');
+iframe.style.height = event.data + 'px'; // Set the height of the iframe based on the message received
+});
+</script>
+</div>
 </body>
 </html>

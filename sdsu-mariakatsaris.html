@@ -30,15 +30,12 @@ iframe.style.height = event.data + 'px'; // Set the height of the iframe based o
 
 <script>
 // In the parent document
-document.addEventListener('keydown', function(event) {
-    if (document.activeElement !== document.getElementById('myIframe')) {
-        if (event.key === 'ArrowUp' || event.key === 'ArrowDown' || event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
-            // Handle the arrow key event
-            console.log('Arrow key pressed in parent');
-            event.preventDefault(); // Prevent default scrolling behavior
-        }
+window.addEventListener('message', function(event) {
+    if (event.data.key) {
+        console.log('Arrow key pressed in iframe:', event.data.key);
+        // Handle the arrow key event as needed
     }
-});  
+}); 
 </script>
   
 </body>

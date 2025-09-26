@@ -26,6 +26,20 @@ window.addEventListener('message', function(event) {
 const iframe = document.getElementById('myIframe');
 iframe.style.height = event.data + 'px'; // Set the height of the iframe based on the message received
 });
+<script>
+    setTimeout(machet,100);
+    function machet() {
+        //alert("machet");
+        document.getElementById("myIframe").contentWindow.focus();
+    }
+document.addEventListener('click', function(event) {
+    // Check if clicked inside iframe
+    if (event.target.tagName !== 'IFRAME') {
+        // If not clicked inside the iframe, refocus it
+        document.getElementById('myIframe').contentWindow.focus();
+    }
+});
+</script>
 </script>
   
 </body>

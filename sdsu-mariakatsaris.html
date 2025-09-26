@@ -27,16 +27,6 @@ const iframe = document.getElementById('myIframe');
 iframe.style.height = event.data + 'px'; // Set the height of the iframe based on the message received
 }); 
 </script>
-
-<script>
-// In the parent document
-window.addEventListener('message', function(event) {
-    if (event.data.key) {
-        console.log('Arrow key pressed in iframe:', event.data.key);
-        // Handle the arrow key event as needed
-    }
-}); 
-</script>
   
 </body>
 </html>

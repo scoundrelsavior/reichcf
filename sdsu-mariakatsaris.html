@@ -18,7 +18,7 @@ background-color:#342811;
 
 <body>
   
-<iframe id="myIframe" src="https://reich.tf/research/mariakatsaris-sdsu" sandbox="allow-scripts allow-same-origin allow-popups" style="overflow:hidden; width: 100%; height: 0; border: none; margin: 0px;"></iframe>
+<iframe id="myIframe" src="https://reich.tf/research/mariakatsaris-sdsu" sandbox="allow-scripts allow-same-origin allow-popups" style="overflow:hidden; width: 100%; height: 0; border: none; margin: 0px;" tabindex="0"></iframe>
 
 <script>
 // Listen for messages from the iframe
@@ -26,9 +26,10 @@ window.addEventListener('message', function(event) {
 const iframe = document.getElementById('myIframe');
 iframe.style.height = event.data + 'px'; // Set the height of the iframe based on the message received
 });
-    const iframe = document.getElementById('myIframe');
+      const iframe = document.getElementById('my-iframe');
 
-    iframe.contentWindow.addEventListener('keydown', function(event) {
+    // Function to handle scrolling
+    function handleScroll(event) {
         const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
         const scrollAmount = 30; // Adjust scroll amount as needed
 
@@ -39,12 +40,20 @@ iframe.style.height = event.data + 'px'; // Set the height of the iframe based o
             iframeDocument.documentElement.scrollTop += scrollAmount; // Scroll down
             event.preventDefault();
         }
+    }
+
+    // Add a global keydown listener
+    document.addEventListener('keydown', function(event) {
+        // Check if the iframe is focused
+        if (document.activeElement === iframe) {
+            handleScroll(event);
+        }
     });
 
-    // Ensure the iframe is focused
+    // Ensure the iframe is focused when clicked
     iframe.addEventListener('click', function() {
         iframe.focus();
-    });  
+    });
 </script>
   
 </body>

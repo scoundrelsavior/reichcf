@@ -26,20 +26,25 @@ window.addEventListener('message', function(event) {
 const iframe = document.getElementById('myIframe');
 iframe.style.height = event.data + 'px'; // Set the height of the iframe based on the message received
 });
-<script>
-    setTimeout(machet,100);
-    function machet() {
-        //alert("machet");
-        document.getElementById("myIframe").contentWindow.focus();
-    }
-document.addEventListener('click', function(event) {
-    // Check if clicked inside iframe
-    if (event.target.tagName !== 'IFRAME') {
-        // If not clicked inside the iframe, refocus it
-        document.getElementById('myIframe').contentWindow.focus();
-    }
-});
-</script>
+    const iframe = document.getElementById('myIframe');
+
+    iframe.contentWindow.addEventListener('keydown', function(event) {
+        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+        const scrollAmount = 30; // Adjust scroll amount as needed
+
+        if (event.key === 'ArrowUp') {
+            iframeDocument.documentElement.scrollTop -= scrollAmount; // Scroll up
+            event.preventDefault();
+        } else if (event.key === 'ArrowDown') {
+            iframeDocument.documentElement.scrollTop += scrollAmount; // Scroll down
+            event.preventDefault();
+        }
+    });
+
+    // Ensure the iframe is focused
+    iframe.addEventListener('click', function() {
+        iframe.focus();
+    });  
 </script>
   
 </body>

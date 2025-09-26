@@ -27,6 +27,19 @@ const iframe = document.getElementById('myIframe');
 iframe.style.height = event.data + 'px'; // Set the height of the iframe based on the message received
 }); 
 </script>
+
+<script>
+// In the parent document
+document.addEventListener('keydown', function(event) {
+    if (document.activeElement !== document.getElementById('myIframe')) {
+        if (event.key === 'ArrowUp' || event.key === 'ArrowDown' || event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+            // Handle the arrow key event
+            console.log('Arrow key pressed in parent');
+            event.preventDefault(); // Prevent default scrolling behavior
+        }
+    }
+});  
+</script>
   
 </body>
 </html>

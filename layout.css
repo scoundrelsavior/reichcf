@@ -19,8 +19,8 @@ background: transparent; /* Disable scrollbar Chrome/Safari/Webkit */
 }
 
 body {
-background-color:#000000;
-color:#FFFFFF;
+background-color:#ffedd0;
+color:#000000;
 text-decoration:none;
 }
 
@@ -87,14 +87,12 @@ opacity:1.0;
 }
 .reichcftitlefamily {
 font-family:ITCEDSCR;
-color:#FFFFFF;
 font-size:2.2rem;
 text-align:center;
 margin:-2px auto 0px;
 }
 .reichcfsubtitlefamily {
 font-family:Montserrat-ThinItalic;
-color:#FFFFFF;
 font-size:0.80rem;
 text-align:center;
 margin:2px auto 8px;
@@ -113,22 +111,19 @@ margin-bottom:-4px;
 }
 .footertitlefamily {
 font-family:ITCEDSCR;
-color:#FFFFFF;
 font-size:1.95rem;
 text-align:center;
 margin-bottom:-4px;
 }
 .footeremail {
-font-family:Montserrat-ThinItalic;
-color:#FFFFFF;
+font-family:Montserrat-LightItalic;
 font-size:0.86rem;
 font-weight:bold;
 text-align:center;
 margin:4px auto auto;
 }
 .footercopyright {
-font-family:Montserrat-ThinItalic;
-color:#FFFFFF;
+font-family:Montserrat-LightItalic;
 font-size:0.80rem;
 text-align:center;
 margin:8px auto auto;
@@ -245,7 +240,6 @@ padding: 10px;
 .bodytypography {
 font-family:OpenSans-Light;
 font-size:1.0rem;
-color:#FFFFFF;
 line-height:1.9;
 }
 
@@ -328,7 +322,7 @@ line-height:1.4;
 }
 .photocaptiontop {
 display:inline-block;
-font-family:Montserrat-ThinItalic;
+font-family:Montserrat-LightItalic;
 font-size:0.85rem;
 border:1px solid #555;
 border-width:1px 0px 1px 0px;
@@ -551,7 +545,6 @@ padding: 15px;
 .bodytypography {
 font-family:OpenSans-Light;
 font-size:1.09rem;
-color:#FFFFFF;
 line-height:1.6;
 }
 .footeralwaysbottom {
@@ -628,7 +621,7 @@ line-height:1.4;
 }
 .photocaptiontop {
 display:inline-block;
-font-family:Montserrat-ThinItalic;
+font-family:Montserrat-LightItalic;
 font-size: 0.95rem;
 border:1px solid #555;
 border-width:1px 0px 1px 0px;
@@ -715,7 +708,6 @@ opacity:1.0;
 }
 .reichcftitlefamily {
 font-family:ITCEDSCR;
-color:#FFFFFF;
 font-size:2.7rem;
 text-align:center;
 margin:-10px auto 0px;
@@ -739,22 +731,19 @@ margin-bottom:-4px;
 }
 .footertitlefamily {
 font-family:ITCEDSCR;
-color:#FFFFFF;
 font-size:2.3rem;
 text-align:center;
 margin-bottom:-4px;
 }
 .footeremail {
-font-family:Montserrat-ThinItalic;
-color:#FFFFFF;
+font-family:Montserrat-LightItalic;
 font-size:1.0rem;
 font-weight:bold;
 text-align:center;
 margin:4px auto auto;
 }
 .footercopyright {
-font-family:Montserrat-ThinItalic;
-color:#FFFFFF;
+font-family:Montserrat-LightItalic;
 font-size:0.95rem;
 text-align:center;
 margin:8px auto auto;
@@ -1102,7 +1091,6 @@ padding: 15px;
 .bodytypography {
 font-family:OpenSans-Light;
 font-size:1.09rem;
-color:#FFFFFF;
 line-height:1.6;
 }
 .footeralwaysbottom {
@@ -1178,7 +1166,7 @@ line-height:1.4;
 }
 .photocaptiontop {
 display:inline-block;
-font-family:Montserrat-ThinItalic;
+font-family:Montserrat-LightItalic;
 font-size: 0.95rem;
 border:1px solid #555;
 border-width:1px 0px 1px 0px;
@@ -1265,7 +1253,6 @@ opacity:1.0;
 }
 .reichcftitlefamily {
 font-family:ITCEDSCR;
-color:#FFFFFF;
 font-size:2.7rem;
 text-align:center;
 margin:-6px auto 0px;
@@ -1289,22 +1276,19 @@ margin-bottom:-4px;
 }
 .footertitlefamily {
 font-family:ITCEDSCR;
-color:#FFFFFF;
 font-size:2.3rem;
 text-align:center;
 margin-bottom:-4px;
 }
 .footeremail {
-font-family:Montserrat-ThinItalic;
-color:#FFFFFF;
+font-family:Montserrat-LightItalic;
 font-size:1.0rem;
 font-weight:bold;
 text-align:center;
 margin:4px auto auto;
 }
 .footercopyright {
-font-family:Montserrat-ThinItalic;
-color:#FFFFFF;
+font-family:Montserrat-LightItalic;
 font-size:0.95rem;
 text-align:center;
 margin:8px auto auto;
@@ -1457,7 +1441,6 @@ padding: 15px;
 .bodytypography {
 font-family:OpenSans-Light;
 font-size:1.09rem;
-color:#FFFFFF;
 line-height:1.6;
 }
 }

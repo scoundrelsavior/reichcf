@@ -18,7 +18,6 @@ width: 0px;
 background: transparent; /* Disable scrollbar Chrome/Safari/Webkit */
 }
 
-/* Background color is a lighter shade of CMYK Peach #FFE4B8 done in Photoshop */
 body {
 background-color:#ffedd0;
 color:#000000;
@@ -27,15 +26,6 @@ text-decoration:none;
 
 /* Mobile Layout: 609px and below. */
 
-
-.leftphoto {
-margin-left:auto;
-margin-right:auto;
-}
-.rightphoto {
-margin-left:auto;
-margin-right:auto;
-}
 .desktopdisplay {
 display:none;
 }
@@ -48,88 +38,76 @@ display:none;
 .mobiledisplay {
 display:block;
 }
-.sectionheadings {
-font-family:TrajanPro3-Regular;
-font-size:0.85rem;
-text-align:center;
-line-height:1;
-}
-.articleheadings {
-font-size:0.9rem;
-text-align:center;
-font-weight:bold;
-}
-.articlesubheadings {
-font-size:0.95rem;
-text-align:center;
-margin:-15px auto -5px;
-}
-.whatsoeverborder {
+
+/* Responsive flex one column-layout instead of two-column layout */
+.flex-container {
+flex-direction: column;
+display: flex;
+/*Don't change padding below to margin.
+Affects Polly Klaas Lead*/
+padding:8px;
+gap:8px;
 border:1px solid #555;
-border-radius:0px;
-margin:0px auto 0px;
-padding:0px 0px 0px;
-border-width:0px 0px 1px 0px;
+border-radius:12px;
+margin:auto;
 }
-.whatsoevercaption {
-font-family:Montserrat-LightItalic;
-font-size: 0.9rem;
-margin:10px auto 10px;
-line-height:1.8;
-text-align:justify;
+.title {
+padding:0px 0px 5px;
 }
-.sources {
+.reichheader {
 display:flex;
-flex-direction:column;
-font-size: 0.9rem;
-margin:26px auto 20px;
-max-width:600px;
-text-align:center;
-justify-content:space-around;
+margin: 3px 0px 9px;
+justify-content:space-between;
+align-items:center;
 }
-.header {
+.reichcftitle {
+font-family:TrajanPro3-Regular;
+color:#EFEFEF;
+font-size:1.4rem;
+text-align:center;
+margin:0px auto 0px;
+}
+.reichcfsubtitle {
+font-family:Montserrat-ThinItalic;
+font-size:0.8rem;
+text-align:center;
+margin:-6px auto 0px;
+}
+.reichheaderfamily {
 display:flex;
 margin: 5px 0px 5px;
 justify-content:space-between;
 align-items:center;
 line-height:1;
 }
-.footerbackgroundimage {
-width:100%;
-margin:auto;
-padding-top:20px;
-padding-bottom:20px;
-background-image:url("images/clouds.jpg");
-background-size:cover;
-background-repeat:no-repeat;
-background-position:center;
-box-shadow: 0 0 8px 8px #FFEDD0 inset;
-}
 .titlecorners {
-display:none;
 max-width:60px;
 margin:-5px -5px 5px;
 opacity:1.0;
 }
-.title {
+.reichcftitlefamily {
 font-family:ITCEDSCR;
-font-size:2.1rem;
+font-size:2.2rem;
 text-align:center;
 margin:-2px auto 0px;
 }
-.subtitle {
+.reichcfsubtitlefamily {
 font-family:Montserrat-LightItalic;
 font-size:0.80rem;
 text-align:center;
 margin:2px auto 8px;
 }
-.summary {
-line-height:1.6;
-margin:0px auto 0px;
-text-align:justify;
+.reichfooterimg {
 display:block;
-border:none;
-margin:auto;
+max-width:170px;
+margin:35px auto 0px;
+}
+.footertitleCF {
+font-family:TrajanPro3-Regular;
+color:#FFFFFF;
+font-size:1.4rem;
+text-align:center;
+margin-bottom:-4px;
 }
 .footerimage {
 max-width:90px;
@@ -163,8 +141,38 @@ text-align:center;
 margin:4px auto auto;
 }
 footer {
-margin-top:20px;
+margin-top:10px;
 margin-bottom:30px;
+}
+.bottomhr {
+margin:auto auto auto;
+border:1px solid #555;
+border-width:0px 0px 1px 0px;
+}
+.summary {
+font-size:0.92rem;
+line-height:2.0;
+display:block;
+border:none;
+padding:15px 0px 15px;
+display:inline-block;
+border:1px solid #555;
+border-width:1px 0px 1px 0px;
+margin:0px auto 30px;
+}
+.summaryfacade {
+font-size:0.92rem;
+line-height:2.0;
+padding:15px 0px 15px;
+display:inline-block;
+border:1px solid #555;
+border-width:1px 0px 1px 0px;
+margin:0px auto -10px;
+}
+.summaryfacadeborderless {
+font-size:0.94rem;
+line-height:1.8;
+margin:0px auto -10px;
 }
 .headings {
 font-family:Cinzel-Regular;
@@ -197,12 +205,52 @@ display:block;
 margin-left:auto;
 margin-right:auto;
 }
+.trajan {
+font-family:TrajanPro3-Regular;
+font-size:20px;
+}
+.cinzel {
+font-family:Cinzel-Regular;
+font-size:15px;
+margin-top:-4px;
+}
+.vivaldi {
+font-family:VIVALDII;
+font-size:19px;
+margin-top:-4px;
+}
+.edwardian {
+font-family:ITCEDSCR;
+font-size:36px;
+}
+.Montserrat-ThinItalic {
+font-family:Montserrat-ThinItalic;
+font-size: 16px;
+line-height:1.5;
+}
+.Montserrat-ExtraLightItalic {
+font-family:Montserrat-ExtraLightItalic;
+font-size: 17px;
+line-height:1.5;
+}
+.cinzeloutlined {
+font-family:Cinzel-Regular;
+font-size:15px;
+margin:-4px auto 0px;
+padding:8px;
+}
+.vivaldioutlined {
+font-family:VIVALDII;
+font-size:19px;
+margin:-4px auto 0px;
+padding:8px;
+}
 .content {
 display: block;
 padding: 10px;
 }
 .bodytypography {
-font-family:OpenSans-Regular;
+font-family:OpenSans-Light;
 font-size:1.0rem;
 line-height:1.9;
 }
@@ -234,84 +282,24 @@ border:1px solid #555;
 border-width:0px 0px 0px 0px;
 border-radius:0px;
 }
-.borderresearch {
-min-height: 97.4vh;
-display:flex;
-flex-direction:column;
-margin:0px 0px 0px;
-border:1px solid #555;
-border-width:0px 0px 0px 0px;
-border-radius:0px;
-}
 .articlehr {
 display:none;
-}
-.articlehralways {
-margin:10px auto 0px;
-border:1px solid #555;
-border-width:0px 0px 0px 0px;
-}
-.footerhr {
-margin:0px auto 0px;
-border:1px solid #555;
-border-width:0px 0px 1px 0px;
-}
-.articlecopyright {
-text-align:center;
-font-family:Montserrat-LightItalic;
-font-size:0.90rem;
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-padding:8px 0px 8px;
-margin:20px auto 20px;
-}
-/*wrap paragraph in div with display:flex in page html*/
-.titlelinesparagraphs {
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-padding:8px 0px 8px 0px;
-margin:auto auto auto;
-}
-.titlelinesheadings {
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-padding:9px 0px 3px 0px;
 }
 .titlelines {
 display:inline-block;
 border:1px solid #555;
 border-width:1px 0px 1px 0px;
-padding:8px 0px 8px;
-margin:26px auto 26px;
+padding:8px 0px 8px 0px;
+margin:0px auto 10px;
 }
-.photolinktitle {
-font-family:ITCEDSCR;
-font-size: 1.95rem;
-text-align:center;
-margin:0px auto 0px;
-line-height:1.0;
-}
-.photolinksubtitle {
-font-family:Montserrat-LightItalic;
-font-size: 0.80rem;
-text-align:center;
-margin:3px auto 0px;
-line-height:1.0;
-}
-.comptabvisible {
-display:none;
-}
-.phonevisible {
-display:block;
+.tableofcontents {
+padding:0px;
 }
 .heading {
 font-size:25px;
 }
 .toptitle {
-font-family:TrajanPro3-Regular;
+font-family:Cinzel-Regular;
 font-size:1.0rem;
 text-align:center;
 margin:20px auto 0px;
@@ -335,7 +323,7 @@ margin:40px auto 40px;
 padding:10px 10px 5px;
 }
 .minimalistcaption {
-font-family:Montserrat-LightItalic;
+font-family:Montserrat-ExtraLightItalic;
 font-size: 16px;
 margin:12px auto 9px;
 border:1px solid #555;
@@ -346,21 +334,22 @@ line-height:1.4;
 }
 .photocaptiontop {
 display:inline-block;
-font-family:OpenSans-Regular;
+font-family:Montserrat-LightItalic;
 font-size:0.85rem;
 border:1px solid #555;
 border-width:1px 0px 1px 0px;
 margin:16px auto 14px;
 padding:6px 0px 6px;
-line-height:2.0;
+line-height:1.6;
 }
 figcaption {
-font-family:Montserrat-LightItalic;
+font-family:Montserrat-ThinItalic;
 font-size:0.85rem;
 text-align:justify;
 line-height:1.6;
 padding-top:10px;
-margin-bottom:15px;
+margin-bottom:0px;
+color:white;
 }
 .figcaptionborder {
 border: 1px solid #555;
@@ -400,82 +389,12 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
-.mariaanthonykatsaris {
-margin-left:auto;
-margin-right:auto;
-}
-.stevenkatsaris {
-margin-left:auto;
-margin-right:auto;
-}
-.mariakatsaristeen {
-margin-left:auto;
-margin-right:auto;
-}
-.johnvictorstoen {
-margin-left:auto;
-margin-right:auto;
-}
-.eugenereed {
+.serafina {
+display:block;
 margin-left: auto;
 margin-right: auto;
 }
-.eugenereedright {
-margin-left: auto;
-margin-right: auto;
-}
-.sylviaralyareinsch {
-margin-left: auto;
-margin-right: auto;
-}
-.newspaperquote {
-font-family:Montserrat-LightItalic;
-font-size:1.0rem;
-line-height:1.6;
-margin:auto 26px auto;
-}
-.pollyklaasreed {
-margin-left: auto;
-margin-right: auto;
-}
-.pollyklaas {
-margin-left: auto;
-margin-right: auto;
-}
-.pkxmas {
-margin-left: auto;
-margin-right: auto;
-}
-.holocaustreed {
-margin-left: auto;
-margin-right: auto;
-}
-.georgiamosesyounger {
-margin-left: auto;
-margin-right: auto;
-}
-.georgiamoses {
-margin-left: auto;
-margin-right: auto;
-}
-.georgiamosesyounger {
-margin-left: auto;
-margin-right: auto;
-}
-.holybible {
-margin-left: auto;
-margin-right: auto;
-}
-.trinityseal {
-max-width:450px;
-margin-left: auto;
-margin-right: auto;
-}
-.trinitysealpage {
-margin-left: auto;
-margin-right: auto;
-}
-.momdaughtertrinity {
+.serafinafacade {
 margin-left: auto;
 margin-right: auto;
 }
@@ -486,10 +405,6 @@ margin-right: auto;
 .motherdaughterfall {
 margin-left: auto;
 margin-right: auto;
-}
-.motherdaughterbedtime {
-margin-right:auto;
-margin-left:auto;
 }
 .motherdaughtergarden {
 margin-right:auto;
@@ -504,10 +419,6 @@ margin-left: auto;
 margin-right: auto;
 }
 .girlfirstcommunion {
-margin-left: auto;
-margin-right: auto;
-}
-.youngwomanprayer {
 margin-left: auto;
 margin-right: auto;
 }
@@ -527,15 +438,11 @@ margin-right: auto;
 margin-left: auto;
 margin-right: auto;
 }
-.londonhollandpark {
+.reichfamilyteengirl {
 margin-left: auto;
 margin-right: auto;
 }
-.teengirl {
-margin-left: auto;
-margin-right: auto;
-}
-.teenboy {
+.reichfamilyteenboy {
 margin-left: auto;
 margin-right: auto;
 }
@@ -543,55 +450,17 @@ margin-right: auto;
 margin-left: auto;
 margin-right: auto;
 }
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
 /*Anchors*/
-#religion {
-scroll-margin-top:15px;
+#disciples {
+scroll-margin-top:10px;
 }
-#holywritings {
-scroll-margin-top:15px;
-}
-#prayer {
-scroll-margin-top:15px;
-}
-#enemies {
-scroll-margin-top:15px;
-}
-#tithing {
-scroll-margin-top:15px;
-}
-#chapters {
-scroll-margin-top:15px;
-}
-#government {
-scroll-margin-top:15px;
-}
-#political {
-scroll-margin-top:15px;
-}
-#raisingchildren {
-scroll-margin-top:15px;
-}
-#comingofage {
-scroll-margin-top:15px;
-}
-#vowofpurity {
-scroll-margin-top:15px;
-}
-#humansexuality {
-scroll-margin-top:15px;
-}
-#teensleavehome {
-scroll-margin-top:15px;
-}
-#temple {
-scroll-margin-top:15px;
-}
-#psychiatry {
-scroll-margin-top:15px;
-}
-#genealogy {
-scroll-margin-top:15px;
-}
+
 /* Tablet Layout 701px to 835px - Ipad Pro 11-inch
 down to 600px wide Kindle Fires and Samsung Galaxy Tab 2. These are 600px
 wide but I take it to 701 to be on the safe side. Most of my images
@@ -599,16 +468,6 @@ are 700px max so stop here.
 Inherits styles from: Mobile Layout. */
 @media only screen and (min-width: 701px) {
 
-.leftphoto {
-max-width:500px;
-float:left;
-margin-right:15px;
-}
-.rightphoto {
-max-width:500px;
-float:right;
-margin-left:15px;
-}
 .desktopdisplay {
 display:none;
 }
@@ -621,21 +480,9 @@ display:block;
 .mobiledisplay {
 display:none;
 }
-.sectionheadings {
-font-family:TrajanPro3-Regular;
-font-size:0.9rem;
-text-align:center;
-line-height:1;
-}
-.articleheadings {
-font-size:1.0rem;
-text-align:center;
-font-weight:bold;
-}
-.articlesubheadings {
-font-size:0.95rem;
-text-align:center;
-margin:-15px auto -5px;
+.title {
+display:block;
+padding:0px 0px 5px;
 }
 .photolayout {
 display:flex;
@@ -663,12 +510,52 @@ display:block;
 margin-left:auto;
 margin-right:auto;
 }
+.trajan {
+font-family:TrajanPro3-Regular;
+font-size:23px;
+}
+.cinzel {
+font-family:Cinzel-Regular;
+font-size:23px;
+margin-top:-8px;
+}
+.vivaldi {
+font-family:VIVALDII;
+font-size:30px;
+margin-top:-8px;
+}
+.edwardian {
+font-family:ITCEDSCR;
+font-size:42px;
+}
+.Montserrat-ThinItalic {
+font-family:Montserrat-ThinItalic;
+font-size: 17px;
+line-height:1.5;
+}
+.Montserrat-ExtraLightItalic {
+font-family:Montserrat-ExtraLightItalic;
+font-size: 20px;
+line-height:1.5;
+}
+.cinzeloutlined {
+font-family:Cinzel-Regular;
+font-size:15px;
+margin:-5px auto 0px;
+padding:10px 10px 0px;
+}
+.vivaldioutlined {
+font-family:VIVALDII;
+font-size:19px;
+margin:-5px auto 0px;
+padding:10px 10px 0px;
+}
 .content {
 display: block;
 padding: 15px;
 }
 .bodytypography {
-font-family:OpenSans-Regular;
+font-family:OpenSans-Light;
 font-size:1.09rem;
 line-height:1.6;
 }
@@ -691,94 +578,38 @@ border-radius:12px;
 min-height: 100vh;
 display:flex;
 flex-direction:column;
-margin:15px auto 15px;
-border:1px solid #555;
-border-width:1px 1px 1px 1px;
-border-radius:12px;
-max-width:600px;
-}
-.borderresearch {
-min-height: 100vh;
-display:flex;
-flex-direction:column;
-margin:0px auto 0px;
+margin:0px 0px 0px;
 border:1px solid #555;
 border-width:0px 0px 0px 0px;
-border-radius:12px;
+border-radius:0px;
+max-width:850px;
 }
 .articlehr {
-display:block;
-margin:0px auto 15px;
-border:1px solid #555;
-border-width:0px 0px 1px 0px;
-}
-.articlehralways {
-margin:15px auto 15px;
-border:1px solid #555;
-border-width:0px 0px 1px 0px;
-}
-.footerhr {
-margin:0px auto 0px;
-border:1px solid #555;
-border-width:0px 0px 1px 0px;
-}
-.articlecopyright {
-text-align:center;
-font-family:Montserrat-LightItalic;
-font-size:0.95rem;
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-padding:8px 0px 8px;
-margin:20px auto 20px;
-}
-/*wrap paragraph in div with display:flex*/
-.titlelinesparagraphs {
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-padding:8px 0px 8px 0px;
-margin:auto auto auto;
-}
-.titlelinesheadings {
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-padding:9px 0px 3px 0px;
+display:none;
 }
 .titlelines {
 display:inline-block;
 border:1px solid #555;
 border-width:1px 0px 1px 0px;
-padding:8px 0px 8px;
-margin:15px auto 13px;
+padding:8px 0px 8px 0px;
+margin:0px auto 15px;
 }
-.photolinktitle {
-font-family:ITCEDSCR;
-font-size: 2.1rem;
-text-align:center;
-margin:0px auto 0px;
-line-height:1.0;
-}
-.photolinksubtitle {
-font-family:Montserrat-LightItalic;
-font-size: 1.0rem;
-text-align:center;
-margin:3px auto 0px;
-line-height:1.0;
-}
-.comptabvisible {
-display:block;
-}
-.phonevisible {
-display:none;
+.tableofcontents {
+padding:6px;
 }
 .toptitle {
-font-family:TrajanPro3-Regular;
+font-family:Cinzel-Regular;
 font-size:1.1rem;
 text-align:center;
 margin:20px auto 0px;
-} 
+}
+.toptitlefacade {
+font-family:Cinzel-Regular;
+font-size:1.1rem;
+text-align:center;
+margin:20px auto 0px;
+text-align:center;
+}  
 .headline {
 font-size:1.09rem;
 text-align:center;
@@ -791,7 +622,7 @@ margin:40px auto 40px;
 padding:12px 12px 12px;
 }
 .minimalistcaption {
-font-family:Montserrat-LightItalic;
+font-family:Montserrat-ExtraLightItalic;
 font-size: 16px;
 margin:12px auto 0px;
 border:1px solid #555;
@@ -802,21 +633,22 @@ line-height:1.4;
 }
 .photocaptiontop {
 display:inline-block;
-font-family:OpenSans-Regular;
+font-family:Montserrat-LightItalic;
 font-size: 0.95rem;
 border:1px solid #555;
 border-width:1px 0px 1px 0px;
 margin:15px auto 4px;
 padding:5px 0px 5px;
-line-height:2.0;
+line-height:1.6;
 }
 figcaption {
-font-family:Montserrat-LightItalic;
+font-family:Montserrat-ThinItalic;
 font-size: 0.95rem;
 text-align:justify;
 line-height:1.6;
 padding-top:10px;
-margin-bottom:15px;
+margin-bottom:2px;
+color:white;
 }
 .figcaptionborder {
 border-width:0px;
@@ -855,151 +687,59 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
-.summary {
-max-width:1000px;
-margin:26px auto 15px;
-text-align:justify;
-line-height:2.0;
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-}
-.mariaanthonykatsaris {
-max-width:850px;
-margin-left:auto;
-margin-right:auto;
-}
-.mariakatsaristeen {
-max-width:500px;
-float:right;
-margin-left:15px;
-}
-.johnvictorstoen {
-max-width:500px;
-float:left;
-margin-right:15px;
-}
-.stevenkatsaris {
-max-width: 850px;
-margin-left:auto;
-margin-right:auto;
-border:0px solid #555;
-border-radius:0px;
-}
-.eugenereed {
-max-width: 450px;
-float:left;
-margin-right:15px;
-}
-.eugenereedright {
-max-width: 450px;
-float:right;
-margin-left:15px;
-}
-.sylviaralyareinsch {
-max-width: 450px;
-float:left;
-margin-right:15px;
-}
-.newspaperquote {
-font-family:Montserrat-LightItalic;
-font-size:1.0rem;
-line-height:1.6;
-margin:auto 26px auto;
-}
-.pollyklaasreed {
-max-width: 450px;
-float:right;
-margin-left:15px;
-}
-.pollyklaas {
-max-width: 850px;
-margin-left:auto;
-margin-right:auto;
-}
-.pkxmas {
-float:left;
-max-width:500px;
-margin-right:15px;
-}
-.holocaustreed {
-max-width: 450px;
-float:left;
-margin-right:15px;
-}
-.georgiamoses {
-max-width: 450px;
-float:left;
-margin-right:15px;
-}
-.georgiamosesyounger {
-max-width: 450px;
-float:right;
-margin-left:15px;
-}
-.deathtapeaudio {
-float:left;
-margin-right:15px;
-}
-/*maxwidth changed for
-each photo inline*/
-.whatsoeverborder {
-border:1px solid #555;
-border-radius:12px;
-margin:26px auto 80px;
-padding:0px 15px 0px;
-}
-.whatsoevercaption {
-font-family:Montserrat-LightItalic;
-font-size: 1.0rem;
-margin:10px auto 10px;
-line-height:1.8;
-text-align:justify;
-}
-.sources {
+.reichheader {
 display:flex;
-flex-direction:column;
-font-size: 1.0rem;
-margin:0px auto 26px;
-max-width:600px;
+margin: 3px 0px 12px;
+justify-content:space-between;
+align-items:center;
+}
+.reichcftitle {
+font-family:TrajanPro3-Regular;
+color:#EFEFEF;
+font-size:1.8rem;
 text-align:center;
-justify-content:space-around;
+margin:0px auto 0px;
 }
-.header {
+.reichcfsubtitle {
+font-family:Montserrat-ThinItalic;
+font-size:1.0rem;
+text-align:center;
+margin:-6px auto 0px;
+}
+.reichheaderfamily {
 display:flex;
-margin: 0px 0px 3px;
+margin: 5px 0px 5px;
 justify-content:space-between;
 align-items:center;
 line-height:1;
 }
-.footerbackgroundimage {
-width:100%;
-margin:auto;
-padding-top:20px;
-padding-bottom:20px;
-background-image:url("images/clouds.jpg");
-background-size:cover;
-background-repeat:no-repeat;
-background-position:center;
-box-shadow: 0 0 8px 8px #FFEDD0 inset;
-}
 .titlecorners {
-display:block;
-max-width:130px;
-margin:0px 26px 0px;
+max-width:85px;
+margin:-8px -5px 5px;
 opacity:1.0;
 }
-.title {
+.reichcftitlefamily {
 font-family:ITCEDSCR;
-font-size:2.5rem;
+font-size:2.7rem;
 text-align:center;
-margin:-6px auto 0px;
+margin:-10px auto 0px;
 }
-.subtitle {
+.reichcfsubtitlefamily {
 font-family:Montserrat-LightItalic;
 font-size:0.95rem;
 text-align:center;
 margin:2px auto 8px;
+}
+.reichfooterimg {
+display:block;
+max-width:180px;
+margin:35px auto 0px;
+}
+.footertitleCF {
+font-family:TrajanPro3-Regular;
+font-size:1.7rem;
+text-align:center;
+margin-bottom:-4px;
 }
 .footerimage {
 max-width:100px;
@@ -1036,35 +776,49 @@ footer {
 margin-top:10px;
 margin-bottom:30px;
 }
-.holybible {
-max-width:450px;
-float:left;
-margin-right:15px;
+.bottomhr {
+margin:auto auto auto;
+border:1px solid #555;
+border-width:0px 0px 1px 0px;
 }
-.trinityseal {
-max-width:450px;
-float:right;
-margin-left:15px;
+.summary {
+font-size:1.0rem;
+line-height:2.0;
+padding:15px 0px 15px;
+display:inline-block;
+border:1px solid #555;
+border-width:1px 0px 1px 0px;
+margin:15px auto 30px;
 }
-.trinitysealpage {
-max-width:500px;
-margin-left: auto;
-margin-right: auto;
+.summaryfacade {
+font-size:1.0rem;
+line-height:2.0;
+padding:15px 0px 15px;
+display:inline-block;
+border:1px solid #555;
+border-width:1px 0px 1px 0px;
+margin:0px auto -20px;
 }
-.momdaughtertrinity {
-max-width:450px;
-float:right;
-margin-left:15px;
+.summaryfacadeborderless {
+font-size:1.08rem;
+line-height:1.8;
+margin:0px auto -20px;
+}
+.serafina {
+max-width: 850px;
+display:block;
+margin-right:auto;
+margin-left:auto;
+}
+.serafinafacade {
+max-width:800px;
+margin:0px auto 0px;
 }
 .motherdaughter {
 margin-right:auto;
 margin-left:auto;
 }
 .motherdaughterfall {
-margin-right:auto;
-margin-left:auto;
-}
-.motherdaughterbedtime {
 margin-right:auto;
 margin-left:auto;
 }
@@ -1081,10 +835,6 @@ margin-left: auto;
 margin-right: auto;
 }
 .girlfirstcommunion {
-margin-left: auto;
-margin-right: auto;
-}
-.youngwomanprayer {
 margin-left: auto;
 margin-right: auto;
 }
@@ -1106,15 +856,11 @@ margin-left:15px;
 margin-left: auto;
 margin-right: auto;
 }
-.londonhollandpark {
+.reichfamilyteengirl {
 margin-left: auto;
 margin-right: auto;
 }
-.teengirl {
-margin-left: auto;
-margin-right: auto;
-}
-.teenboy {
+.reichfamilyteenboy {
 margin-left: auto;
 margin-right: auto;
 }
@@ -1122,53 +868,19 @@ margin-right: auto;
 margin-left: auto;
 margin-right: auto;
 }
+.mySlides {
+max-width:100%;
+max-height:100%;
+padding-top:0px;
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
 /*Anchors*/
-#religion {
-scroll-margin-top:15px;
-}
-#holywritings {
-scroll-margin-top:15px;
-}
-#prayer {
-scroll-margin-top:15px;
-}
-#enemies {
-scroll-margin-top:15px;
-}
-#tithing {
-scroll-margin-top:15px;
-}
-#chapters {
-scroll-margin-top:15px;
-}
-#government {
-scroll-margin-top:15px;
-}
-#political {
-scroll-margin-top:15px;
-}
-#raisingchildren {
-scroll-margin-top:15px;
-}
-#comingofage {
-scroll-margin-top:15px;
-}
-#vowofpurity {
-scroll-margin-top:15px;
-}
-#humansexuality {
-scroll-margin-top:15px;
-}
-#teensleavehome {
-scroll-margin-top:15px;
-}
-#temple {
-scroll-margin-top:15px;
-}
-#psychiatry {
-scroll-margin-top:15px;
-}
-#genealogy {
+#disciples {
 scroll-margin-top:15px;
 }
 }
@@ -1184,17 +896,7 @@ margin:15px auto 15px;
 border:1px solid #555;
 border-width:1px 1px 1px 1px;
 border-radius:12px;
-max-width:600px;
-}
-.borderresearch {
-min-height: 100vh;
-display:flex;
-flex-direction:column;
-margin:15px auto 15px;
-border:1px solid #555;
-border-width:1px 1px 1px 1px;
-border-radius:12px;
-max-width:1000px;
+max-width:850px;
 }
 }
 
@@ -1203,23 +905,13 @@ rotated mobile phones up to 1000px long into account. Inherits styles from:
 Mobile Layout and Tablet Layout. */
 @media only screen and (min-width: 1001px) {
 
-.leftphoto {
-max-width:700px;
-float:left;
-margin-right:15px;
-}
-.rightphoto {
-max-width:650px;
-float:right;
-margin-left:15px;
-}
 .border {
 min-height:100vh;
 display:flex;
 flex-direction:column;
-margin:0px 0px 0px;
+margin:15px 15px 15px;
 border:1px solid #555;
-border-width:0px 0px 0px 0px;
+border-width:1px 1px 1px 1px;
 border-radius:12px;
 }
 .borderfacade {
@@ -1230,29 +922,11 @@ margin:15px auto 15px;
 border:1px solid #555;
 border-width:1px 1px 1px 1px;
 border-radius:12px;
-max-width:600px;
-}
-.borderresearch {
-min-height: 100vh;
-display:flex;
-flex-direction:column;
-margin:15px auto 15px;
-border:1px solid #555;
-border-width:1px 1px 1px 1px;
-border-radius:12px;
-max-width:1000px;
+max-width:850px;
 }
 .articlehr {
 display:block;
 margin:0px auto 15px;
-border:1px solid #555;
-border-width:0px 0px 1px 0px;
-}
-.articlehralways {
-display:block;
-}
-.footerhr {
-margin:0px auto 0px;
 border:1px solid #555;
 border-width:0px 0px 1px 0px;
 }
@@ -1268,23 +942,8 @@ display:none;
 .mobiledisplay {
 display:none;
 }
-.holybible {
-max-width:450px;
-float:left;
-margin-right:15px;
-}
-.trinityseal {
-max-width:500px;
-float:right;
-margin-left:15px;
-}
-.trinitysealpage {
-max-width:500px;
-margin-left: auto;
-margin-right: auto;
-}
-.momdaughtertrinity {
-max-width:550px;
+.serafina {
+max-width: 650px;
 float:right;
 margin-left:15px;
 }
@@ -1299,11 +958,6 @@ float:right;
 margin-left:15px;
 }
 .motherdaughterfall {
-max-width:700px;
-float:left;
-margin-right:15px;
-}
-.motherdaughterbedtime {
 max-width:700px;
 float:left;
 margin-right:15px;
@@ -1328,11 +982,6 @@ max-width:700px;
 float:right;
 margin-left:15px;
 }
-.youngwomanprayer {
-max-width:700px;
-float:right;
-margin-left:15px;
-}
 .motherdaughterfield {
 max-width:700px;
 float:left;
@@ -1353,29 +1002,24 @@ max-width:700px;
 float:left;
 margin-right:15px;
 }
-.londonhollandpark {
-max-width:700px;
-float:left;
-margin-right:15px;
-}
-.comptabvisible {
-display:block;
-}
-.phonevisible {
-display:none;
-}
 .toptitle {
-font-family:TrajanPro3-Regular;
+font-family:Cinzel-Regular;
 font-size:1.1rem;
 text-align:center;
 margin:0px auto 0px;
 }
-.teengirl {
+.toptitlefacade {
+font-family:Cinzel-Regular;
+font-size:1.1rem;
+text-align:center;
+margin:20px auto 0px;
+}
+.reichfamilyteengirl {
 max-width:700px;
 float:right;
 margin-left:15px;
 }
-.teenboy {
+.reichfamilyteenboy {
 max-width:700px;
 float:left;
 margin-right:15px;
@@ -1385,57 +1029,11 @@ max-width:700px;
 float:left;
 margin-right:15px;
 }
-.mariaanthonykatsaris {
-max-width:700px;
-float:left;
-margin-right:15px;
-}
-.whatsoevercaption {
-font-family:Montserrat-LightItalic;
-font-size: 1.0rem;
-margin:10px auto 10px;
-line-height:1.8;
-text-align:justify;
-}
-.sources {
-display:flex;
-flex-direction:column;
-font-size: 1.0rem;
-margin:0px auto 26px;
-max-width:600px;
-text-align:center;
-justify-content:space-around;
-}
-.stevenkatsaris {
-max-width: 700px;
-float:left;
-margin-right:15px;
-margin-top:5px;
-margin-bottom:0px;
-border:0px solid #555;
-border-radius:0px;
-display:block;
-}
-.sylviaralyareinsch {
-max-width: 655px;
-float:left;
-margin-right:15px;
-}
 }
 
 /* Desktop Layout: 1025px to a max of 1366px - Everything above Ipad Pro 11-inch. Inherits styles from: Mobile Layout and Tablet Layout. */
 @media only screen and (min-width: 1025px) {
 
-.leftphoto {
-max-width:800px;
-float:left;
-margin-right:15px;
-}
-.rightphoto {
-max-width:800px;
-float:right;
-margin-left:15px;
-}
 .desktopdisplay {
 display:block;
 }
@@ -1448,21 +1046,9 @@ display:none;
 .mobiledisplay {
 display:none;
 }
-.sectionheadings {
-font-family:TrajanPro3-Regular;
-font-size:0.9rem;
-text-align:center;
-line-height:1;
-}
-.articleheadings {
-font-size:1.0rem;
-text-align:center;
-font-weight:bold;
-}
-.articlesubheadings {
-font-size:0.95rem;
-text-align:center;
-margin:-15px auto -5px;
+.title {
+display:block;
+padding:0px 0px 5px;
 }
 .photolayout {
 display:flex;
@@ -1488,14 +1074,54 @@ display:block;
 margin-left:auto;
 margin-right:auto;
 }
+.trajan {
+font-family:TrajanPro3-Regular;
+font-size:23px;
+}
+.cinzel {
+font-family:Cinzel-Regular;
+font-size:23px;
+margin-top:-8px;
+}
+.vivaldi {
+font-family:VIVALDII;
+font-size:30px;
+margin-top:-8px;
+}
+.edwardian {
+font-family:ITCEDSCR;
+font-size:42px;
+}
+.Montserrat-ThinItalic {
+font-family:Montserrat-ThinItalic;
+font-size: 17px;
+line-height:1.5;
+}
+.Montserrat-ExtraLightItalic {
+font-family:Montserrat-ExtraLightItalic;
+font-size: 20px;
+line-height:1.5;
+}
+.cinzeloutlined {
+font-family:Cinzel-Regular;
+font-size:16px;
+margin:-5px auto 0px;
+padding:10px 10px 0px;
+}
 .content {
 display:block;
 padding: 15px;
 }
 .bodytypography {
-font-family:OpenSans-Regular;
+font-family:OpenSans-Light;
 font-size:1.09rem;
 line-height:1.6;
+}
+.footeralwaysbottom {
+min-height: 100vh;
+display:flex;
+flex-direction:column;
+margin-bottom:15px;
 }
 .border {
 min-height:100vh;
@@ -1514,17 +1140,7 @@ margin:15px auto 15px;
 border:1px solid #555;
 border-width:1px 1px 1px 1px;
 border-radius:12px;
-max-width:600px;
-}
-.borderresearch {
-min-height: 100vh;
-display:flex;
-flex-direction:column;
-margin:15px auto 15px;
-border:1px solid #555;
-border-width:1px 1px 1px 1px;
-border-radius:12px;
-max-width:1000px;
+max-width:850px;
 }
 .articlehr {
 display:block;
@@ -1532,73 +1148,28 @@ margin:0px auto 15px;
 border:1px solid #555;
 border-width:0px 0px 1px 0px;
 }
-.articlehralways {
-display:block;
-margin:0px auto 15px;
-border:1px solid #555;
-border-width:0px 0px 1px 0px;
-}
-.footerhr {
-margin:0px auto 0px;
-border:1px solid #555;
-border-width:0px 0px 1px 0px;
-}
-.articlecopyright {
-text-align:center;
-font-family:Montserrat-LightItalic;
-font-size:0.95rem;
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-padding:8px 0px 8px;
-margin:20px auto 20px;
-}
-/*wrap paragraph in div with display:flex*/
-.titlelinesparagraphs {
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-padding:8px 0px 8px 0px;
-margin:auto auto auto;
-}
-.titlelinesheadings {
-display:inline-block;
-border:1px solid #555;
-border-width:1px 0px 1px 0px;
-padding:9px 0px 3px 0px;
-}
 .titlelines {
 display:inline-block;
 border:1px solid #555;
 border-width:1px 0px 1px 0px;
-padding:8px 0px 8px;
-margin:15px auto 13px;
+padding:8px 0px 8px 0px;
+margin:0px auto 15px;
 }
-.photolinktitle {
-font-family:ITCEDSCR;
-font-size: 2.4rem;
-text-align:center;
-margin:0px auto 0px;
-line-height:1.0;
-}
-.photolinksubtitle {
-font-family:Montserrat-LightItalic;
-font-size: 1.0rem;
-text-align:center;
-margin:3px auto 0px;
-line-height:1.0;
+.tableofcontents {
+padding: 15px;
 }
 .toptitle {
-font-family:TrajanPro3-Regular;
+font-family:Cinzel-Regular;
 font-size:1.1rem;
 text-align:center;
 margin:0px auto 0px;
 }
-.headline {
-font-size:1.2rem;
+.toptitlefacade {
+font-family:Cinzel-Regular;
+font-size:1.1rem;
+margin:20px auto 0px;
 text-align:center;
-margin:-5px auto auto;
-}
+} 
 /*maxwidth changed for
 each photo inline*/
 .minimalistborder {
@@ -1608,7 +1179,7 @@ margin:40px auto 40px;
 padding:15px 15px 15px;
 }
 .minimalistcaption {
-font-family:Montserrat-LightItalic;
+font-family:Montserrat-ExtraLightItalic;
 font-size: 16px;
 margin:15px auto 0px;
 border:1px solid #555;
@@ -1619,21 +1190,22 @@ line-height:1.4;
 }
 .photocaptiontop {
 display:inline-block;
-font-family:OpenSans-Regular;
+font-family:Montserrat-LightItalic;
 font-size: 0.95rem;
 border:1px solid #555;
 border-width:1px 0px 1px 0px;
 margin:15px auto 4px;
 padding:5px 0px 5px;
-line-height:2.0;
+line-height:1.6;
 }
 figcaption {
-font-family:Montserrat-LightItalic;
+font-family:Montserrat-ThinItalic;
 text-align:justify;
 font-size: 0.95rem;
 line-height:1.6;
 padding-top:10px;
-margin-bottom:10px;	
+margin-bottom:2px;
+color:white;	
 }
 .figcaptionborder {
 border-width:0px;
@@ -1672,134 +1244,59 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
-.mariaanthonykatsaris {
-max-width:850px;
-float:left;
-margin-right:15px;
-}
-.mariakatsaristeen {
-max-width:600px;
-float:right;
-margin-left:15px;
-}
-.johnvictorstoen {
-max-width:600px;
-float:left;
-margin-right:15px;
-}
-.stevenkatsaris {
-max-width: 800px;
-float:left;
-margin-right:15px;
-margin-top:5px;
-margin-bottom:0px;
-border:0px solid #555;
-border-radius:0px;
-display:block;
-}
-.eugenereed {
-max-width: 650px;
-float:left;
-margin-right:15px;
-}
-.eugenereedright {
-max-width: 650px;
-float:right;
-margin-left:15px;
-}
-.sylviaralyareinsch {
-max-width: 655px;
-float:left;
-margin-right:15px;
-}
-.newspaperquote {
-font-family:Montserrat-LightItalic;
-font-size:1.0rem;
-line-height:1.6;
-margin:auto 26px auto;
-}
-.pollyklaasreed {
-max-width: 650px;
-float:right;
-margin-left:15px;
-}
-.pollyklaas {
-max-width:800px;
-float:left;
-margin-right:15px;
-}
-.pkxmas {
-float:left;
-max-width:800px;
-margin-right:15px;
-}
-.holocaustreed {
-max-width: 650px;
-float:left;
-margin-right:15px;
-}
-.georgiamoses {
-max-width: 600px;
-float:left;
-margin-right:15px;
-}
-.georgiamosesyounger {
-max-width: 500px;
-float:right;
-margin-left:15px;
-}
-.whatsoevercaption {
-font-family:Montserrat-LightItalic;
-font-size: 1.0rem;
-margin:10px auto 10px;
-line-height:1.8;
-text-align:justify;
-}
-.sources {
+.reichheader {
 display:flex;
-flex-direction:column;
-font-size: 1.0rem;
-margin:0px auto 26px;
-max-width:600px;
-text-align:center;
-justify-content:space-around;
+margin: 3px 0px 12px;
+justify-content:space-between;
+align-items:center;
 }
-.header {
+.reichcftitle {
+font-family:TrajanPro3-Regular;
+color:#EFEFEF;
+font-size:1.8rem;
+text-align:center;
+margin:0px auto 0px;
+}
+.reichcfsubtitle {
+font-family:Montserrat-ThinItalic;
+font-size:1.0rem;
+text-align:center;
+margin:-6px auto 0px;
+}
+.reichheaderfamily {
 display:flex;
 margin:0px 0px 0px;
 justify-content:space-between;
 align-items:center;
 line-height:1;
 }
-/*max-width goes here*/
-.footerbackgroundimage {
-width:100%;
-margin:auto;
-padding-top:26px;
-padding-bottom:26px;
-background-image:url("images/clouds.jpg");
-background-size:cover;
-background-repeat:no-repeat;
-background-position:center;
-box-shadow: 0 0 8px 8px #FFEDD0 inset;
-}
 .titlecorners {
-display:block;
-max-width:180px;
-margin:auto 15px auto;
+max-width:85px;
+margin:-8px -5px 5px;
 opacity:1.0;
 }
-.title {
+.reichcftitlefamily {
 font-family:ITCEDSCR;
 font-size:2.7rem;
 text-align:center;
 margin:-6px auto 0px;
 }
-.subtitle {
+.reichcfsubtitlefamily {
 font-family:Montserrat-LightItalic;
 font-size:0.95rem;
 text-align:center;
 margin:2px auto 10px;
+}
+.reichfooterimg {
+display:block;
+max-width:180px;
+margin:35px auto 0px;
+}
+.footertitleCF {
+font-family:TrajanPro3-Regular;
+font-size:1.7rem;
+text-align:center;
+margin-bottom:-4px;
 }
 .footerimage {
 max-width:100px;
@@ -1836,34 +1333,43 @@ footer {
 margin-top:10px;
 margin-bottom:30px;
 }
+.bottomhr {
+clear:both;
+margin:30px auto auto;
+border:1px solid #555;
+border-width:0px 0px 1px 0px;
+}
 .summary {
-max-width:1000px;
-margin:26px auto 15px;
-text-align:justify;
+font-size:1.0rem;
 line-height:2.0;
+padding:15px 0px 15px;
 display:inline-block;
 border:1px solid #555;
 border-width:1px 0px 1px 0px;
+margin:15px auto 30px;
 }
-.holybible {
-max-width:450px;
-float:left;
-margin-right:15px;
+.summaryfacade {
+font-size:1.0rem;
+line-height:2.0;
+padding:15px 0px 15px;
+display:inline-block;
+border:1px solid #555;
+border-width:1px 0px 1px 0px;
+margin:0px auto -20px;
 }
-.trinityseal {
-max-width:500px;
+.summaryfacadeborderless {
+font-size:1.08rem;
+line-height:1.6;
+margin:0px auto -20px;
+}
+.serafina {
+max-width: 700px;
 float:right;
 margin-left:15px;
 }
-.trinitysealpage {
-max-width:500px;
-margin-left: auto;
-margin-right: auto;
-}
-.momdaughtertrinity {
-max-width:600px;
-float:right;
-margin-left:15px;
+.serafinafacade {
+max-width:800px;
+margin:0px auto 0px;
 }
 .motherdaughter {
 max-width:700px;
@@ -1871,11 +1377,6 @@ float:left;
 margin-right:15px;
 }
 .motherdaughterfall {
-max-width:700px;
-float:left;
-margin-right:15px;
-}
-.motherdaughterbedtime {
 max-width:700px;
 float:left;
 margin-right:15px;
@@ -1900,11 +1401,6 @@ max-width:700px;
 float:right;
 margin-left:15px;
 }
-.youngwomanprayer {
-max-width:700px;
-float:right;
-margin-left:15px;
-}
 .motherdaughterfield {
 max-width: 850px;
 float:left;
@@ -1924,17 +1420,12 @@ max-width:700px;
 float:left;
 margin-right:15px;
 }
-.londonhollandpark {
-max-width:700px;
-float:left;
-margin-right:15px;
-}
-.teengirl {
+.reichfamilyteengirl {
 max-width:700px;
 float:right;
 margin-left:15px;
 }
-.teenboy {
+.reichfamilyteenboy {
 max-width:700px;
 float:left;
 margin-right:15px;
@@ -1944,70 +1435,24 @@ max-width:700px;
 float:left;
 margin-right:15px;
 }
+.mySlides {
+max-width: 100%;
+max-height: 100%;
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
 /*Anchors*/
-#religion {
-scroll-margin-top:15px;
-}
-#holywritings {
-scroll-margin-top:15px;
-}
-#prayer {
-scroll-margin-top:15px;
-}
-#enemies {
-scroll-margin-top:15px;
-}
-#tithing {
-scroll-margin-top:15px;
-}
-#chapters {
-scroll-margin-top:15px;
-}
-#government {
-scroll-margin-top:15px;
-}
-#political {
-scroll-margin-top:15px;
-}
-#raisingchildren {
-scroll-margin-top:15px;
-}
-#comingofage {
-scroll-margin-top:15px;
-}
-#vowofpurity {
-scroll-margin-top:15px;
-}
-#humansexuality {
-scroll-margin-top:15px;
-}
-#teensleavehome {
-scroll-margin-top:15px;
-}
-#temple {
-scroll-margin-top:15px;
-}
-#psychiatry {
-scroll-margin-top:15px;
-}
-#genealogy {
+#disciples {
 scroll-margin-top:15px;
 }
 }
 
 /* Desktop Layout: 1367px and above. This is here to place the white outline around the content with 15px margin top and bottom for screens above 1366px. Inherits styles from: Mobile Layout and Tablet Layout. */
 @media only screen and (min-width: 1367px) {
-
-.leftphoto {
-max-width:800px;
-float:left;
-margin-right:15px;
-}
-.rightphoto {
-max-width:800px;
-float:right;
-margin-left:15px;
-}
 .border {
 min-height:100vh;
 margin:15px auto 15px;
@@ -2023,24 +1468,14 @@ margin:15px auto 15px;
 border:1px solid #555;
 border-width:1px 1px 1px 1px;
 border-radius:12px;
-max-width:600px;
-}
-.borderresearch {
-min-height: 100vh;
-display:flex;
-flex-direction:column;
-margin:15px auto 15px;
-border:1px solid #555;
-border-width:1px 1px 1px 1px;
-border-radius:12px;
-max-width:1000px;
+max-width:850px;
 }
 .content {
 display:block;
 padding: 15px;
 }
 .bodytypography {
-font-family:OpenSans-Regular;
+font-family:OpenSans-Light;
 font-size:1.09rem;
 line-height:1.6;
 }
